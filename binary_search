@@ -1,0 +1,14 @@
+int binary_search(int left, int right, int pivot)
+{
+    while (left <= right)
+    {
+        int mid = (left + right) / 2;
+        if (array[mid] < pivot)
+            left = mid + 1;
+        else if (array[mid] > pivot)
+            right = mid - 1;
+        else if (array[mid] == pivot)
+            return mid;
+    }
+    return left;    // 如果找不到，就回傳稍大一點的數值位置。
+}
