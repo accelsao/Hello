@@ -47,12 +47,27 @@ void update(int L, int R, int i){
 	build(M + 1, R, (i << 1) + 1);
 	node[i] = node[i << 1] + node[(i << 1) + 1];
 }
+int x1,x2,tot;// 查詢範圍[x1,x2]並且累計總和
+void query(int L,int R,int i){
+    if(x1<=L&&x2>=R) { //L,R 在要查詢的範圍之間 
+    tot+=node[i];
+    return ;
+    }    
+    int M=(L+R)>>1; 
+    if(x1<=M)query(L,M,i>>1);
+    if(x2>M )query(M+1, R, (i>>1)+1); 
+}
 int main(){
 	int n;
 	cin >> n;
 	for (int i = 0; i < n; i++)
 		cin >> p[i];
 	build(0,n-1,1);
-
-
+    // 索引值為5的元素，更新為7。
+    x = 5; n = 7;
+    update(0, 99, 1);
+	// 查詢區間[3,3]的總和
+	x1 = 3; x2 = 3; tot = 0;
+    query(0, 99, 1);
+    cout << tot;
 }
