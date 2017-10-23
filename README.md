@@ -76,4 +76,4 @@ DP-插頭DP -http://www.csie.ntnu.edu.tw/~u91029/DynamicProgramming.html#1
 
 4:遊戲人生
 
-5.槍彈
+
