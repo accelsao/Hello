@@ -23,6 +23,8 @@ hamilton euler postman 暫時結束
 17/10/21
 
 # 出提類別:
+1169 改題 1092 看看
+
 dp優化 http://pisces.ck.tp.edu.tw/~peng/index.php?action=showfile&file=fe8e302bf69142773c541b1133e43c7413a560a38
 
 樹-線段樹
