@@ -22,7 +22,7 @@ hamilton euler postman 暫時結束
 插頭DP真他X的難...ㄏㄏ
 17/10/21
 
-# 出提類別:
+# 出題類別:
 1169 改題 1092 看看
 
 dp優化 http://pisces.ck.tp.edu.tw/~peng/index.php?action=showfile&file=fe8e302bf69142773c541b1133e43c7413a560a38
@@ -76,3 +76,4 @@ DP-插頭DP -http://www.csie.ntnu.edu.tw/~u91029/DynamicProgramming.html#1
 
 4:遊戲人生
 
+5.槍彈
