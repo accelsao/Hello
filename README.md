@@ -27,6 +27,8 @@ hamilton euler postman 暫時結束
 
 dp優化 http://pisces.ck.tp.edu.tw/~peng/index.php?action=showfile&file=fe8e302bf69142773c541b1133e43c7413a560a38
 
+http://www.csie.ntnu.edu.tw/~u91029/State.html#1 STATE 搜尋 
+
 樹-線段樹
 
 單調隊列 
