@@ -71,6 +71,8 @@ RMQ
 
 DP-插頭DP -http://www.csie.ntnu.edu.tw/~u91029/DynamicProgramming.html#1
 
+莫隊算法 區間眾數
+
 # 出題故事
 
 1:遊戲人生
