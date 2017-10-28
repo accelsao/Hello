@@ -52,6 +52,8 @@ DP-插頭DP -http://www.csie.ntnu.edu.tw/~u91029/DynamicProgramming.html#1
 
 莫隊算法 區間眾數
 
+http://hzwer.com/1234.html 集庫
+
 # Mood notes
 堀北鈴音<3 
 
