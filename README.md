@@ -1,10 +1,11 @@
 <p align="center"> 
   # Problem queue
-
-  博弈問題及SG函數https://read01.com/zh-tw/zyeyO.html#.WfR8aFuCyUl
+</p>
+<p align="center"> 
+   博弈問題及SG函數https://read01.com/zh-tw/zyeyO.html#.WfR8aFuCyUl
 
   12594 - Naming Babies
-
+</p>
   # Problem category:
 
   dp優化 http://pisces.ck.tp.edu.tw/~peng/index.php?action=showfile&file=fe8e302bf69142773c541b1133e43c7413a560a38
