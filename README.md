@@ -1,5 +1,5 @@
-# Problem queue 
--
+# Problem queue
+
 12594 - Naming Babies
 
 # 心情筆記(純靠北)
@@ -75,13 +75,13 @@ DP-插頭DP -http://www.csie.ntnu.edu.tw/~u91029/DynamicProgramming.html#1
 # 出題故事
 數字順序
 -
-3:RE0
-
-4:美好世界
+1:遊戲人生
 
 2:Overlord
 
-1:遊戲人生
+3:RE0
+
+4:美好世界
 
 # 參考blog:
 -
