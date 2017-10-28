@@ -2,13 +2,12 @@
 
 12594 - Naming Babies
 
-# 心情筆記(純靠北)
-堀北鈴音<3
+# Mood notes(純靠北)
+堀北鈴音<3 
 
 最近開始
 再次面對樹
 好崩潰qq
-
 
 不想看樹之後
 又快被flow給打趴了...
@@ -73,7 +72,6 @@ RMQ
 DP-插頭DP -http://www.csie.ntnu.edu.tw/~u91029/DynamicProgramming.html#1
 
 # 出題故事
-數字順序
 -
 1:遊戲人生
 
