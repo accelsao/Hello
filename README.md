@@ -83,6 +83,8 @@ DP-插頭DP -http://www.csie.ntnu.edu.tw/~u91029/DynamicProgramming.html#1
 
 4:美好世界
 
+5:實力主義
+
 # 參考blog:
 
 http://www.cnblogs.com/lidaxin/
