@@ -23,7 +23,6 @@ hamilton euler postman 暫時結束
 17/10/21
 
 # 出題類別:
-1169 改題 1092 看看
 
 dp優化 http://pisces.ck.tp.edu.tw/~peng/index.php?action=showfile&file=fe8e302bf69142773c541b1133e43c7413a560a38
 
@@ -70,12 +69,14 @@ RMQ
 DP-插頭DP -http://www.csie.ntnu.edu.tw/~u91029/DynamicProgramming.html#1
 
 # 出題故事
-目前主要:RE0
+數字順序
+-
+3:RE0
 
-次要:美好世界
+4:美好世界
 
-3:Overlord
+2:Overlord
 
-4:遊戲人生
+1:遊戲人生
 
 
