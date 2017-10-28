@@ -72,7 +72,7 @@ RMQ
 DP-插頭DP -http://www.csie.ntnu.edu.tw/~u91029/DynamicProgramming.html#1
 
 # 出題故事
--
+---
 1:遊戲人生
 
 2:Overlord
@@ -82,6 +82,6 @@ DP-插頭DP -http://www.csie.ntnu.edu.tw/~u91029/DynamicProgramming.html#1
 4:美好世界
 
 # 參考blog:
--
+--
 http://www.cnblogs.com/lidaxin/
 http://morris821028.github.io/
