@@ -72,7 +72,7 @@ RMQ
 DP-插頭DP -http://www.csie.ntnu.edu.tw/~u91029/DynamicProgramming.html#1
 
 # 出題故事
----
+--
 1:遊戲人生
 
 2:Overlord
