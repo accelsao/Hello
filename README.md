@@ -4,7 +4,7 @@
 
 12594 - Naming Babies
 
-# 出題類別:
+# Problem Category:
 
 dp優化 http://pisces.ck.tp.edu.tw/~peng/index.php?action=showfile&file=fe8e302bf69142773c541b1133e43c7413a560a38
 
@@ -75,7 +75,7 @@ hamilton euler postman 暫時結束
 插頭DP真他X的難...ㄏㄏ
 17/10/21
 
-# 出題故事
+# Problem Story
 
 1:遊戲人生
 
@@ -87,7 +87,7 @@ hamilton euler postman 暫時結束
 
 5:實力主義
 
-# 參考blog:
+# Blog reference:
 
 http://www.cnblogs.com/lidaxin/
 
