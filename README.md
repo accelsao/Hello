@@ -1,14 +1,18 @@
+<p align="center"> 
+<img src="...">
+</p>
+
 # Problem queue
 
 博弈問題及SG函數https://read01.com/zh-tw/zyeyO.html#.WfR8aFuCyUl
 
 12594 - Naming Babies
 
-# Problem Category:
+# Problem category:
 
 dp優化 http://pisces.ck.tp.edu.tw/~peng/index.php?action=showfile&file=fe8e302bf69142773c541b1133e43c7413a560a38
 
-http://www.csie.ntnu.edu.tw/~u91029/State.html#1 STATE 搜尋 
+STATE 搜尋  http://www.csie.ntnu.edu.tw/~u91029/State.html#1 
 
 樹-線段樹
 
@@ -52,7 +56,7 @@ DP-插頭DP -http://www.csie.ntnu.edu.tw/~u91029/DynamicProgramming.html#1
 
 莫隊算法 區間眾數
 
-# Mood notes(純靠北)
+# Mood notes
 堀北鈴音<3 
 
 最近開始
@@ -75,7 +79,7 @@ hamilton euler postman 暫時結束
 插頭DP真他X的難...ㄏㄏ
 17/10/21
 
-# Problem Story
+# Problem story
 
 1:遊戲人生
 
