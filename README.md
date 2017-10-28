@@ -1,5 +1,7 @@
 # Problem queue
 
+博弈問題及SG函數https://read01.com/zh-tw/zyeyO.html#.WfR8aFuCyUl
+
 12594 - Naming Babies
 
 # Mood notes(純靠北)
