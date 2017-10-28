@@ -83,5 +83,7 @@ DP-插頭DP -http://www.csie.ntnu.edu.tw/~u91029/DynamicProgramming.html#1
 
 # 參考blog:
 --
+
 http://www.cnblogs.com/lidaxin/
+
 http://morris821028.github.io/
