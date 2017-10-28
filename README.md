@@ -1,7 +1,4 @@
 <p align="center"> 
-<img src="53151351531">
-</p>
-
 # Problem queue
 
 博弈問題及SG函數https://read01.com/zh-tw/zyeyO.html#.WfR8aFuCyUl
@@ -96,3 +93,4 @@ hamilton euler postman 暫時結束
 http://www.cnblogs.com/lidaxin/
 
 http://morris821028.github.io/
+</p>
