@@ -1,10 +1,10 @@
 # Problem queue
 
-博弈問題及SG函數https://read01.com/zh-tw/zyeyO.html#.WfR8aFuCyUl
-
-12594 - Naming Babies
+nim變形 
 
 https://www.math.ucla.edu/~tom/Game_Theory/Contents.html
+
+12594 - Naming Babies 斜率優化
 
 # Problem category:
 
