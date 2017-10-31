@@ -4,6 +4,8 @@
 
 12594 - Naming Babies
 
+https://www.math.ucla.edu/~tom/Game_Theory/Contents.html
+
 # Problem category:
 
 dp優化 http://pisces.ck.tp.edu.tw/~peng/index.php?action=showfile&file=fe8e302bf69142773c541b1133e43c7413a560a38
