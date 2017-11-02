@@ -1,8 +1,12 @@
 # Problem queue
 
-nim變形 
-
 https://www.math.ucla.edu/~tom/Game_Theory/Contents.html
+
+Staircase nim
+
+刪邊遊戲
+
+sprout
 
 12594 - Naming Babies 斜率優化
 
