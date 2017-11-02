@@ -10,7 +10,7 @@ sprout
 
 12594 - Naming Babies 斜率優化
 
-# Problem category:
+# Problem category
 
 dp優化 http://pisces.ck.tp.edu.tw/~peng/index.php?action=showfile&file=fe8e302bf69142773c541b1133e43c7413a560a38
 
@@ -95,7 +95,7 @@ hamilton euler postman 暫時結束
 
 5:實力主義
 
-# Blog reference:
+# Blog reference
 
 http://www.cnblogs.com/lidaxin/
 
