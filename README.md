@@ -85,6 +85,9 @@ hamilton euler postman 暫時結束
 插頭DP真他X的難...ㄏㄏ
 17/10/21
 
+Nim 好像玩太久了 不小心就入坑了
+17/11/03
+
 # Problem story
 
 1:遊戲人生
