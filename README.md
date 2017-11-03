@@ -2,9 +2,7 @@
 
 https://www.math.ucla.edu/~tom/Game_Theory/Contents.html
 
-Staircase nim
-
-刪邊遊戲
+刪邊遊戲 hackenbush
 
 sprout
 
