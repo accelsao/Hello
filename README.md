@@ -4,6 +4,8 @@ https://www.math.ucla.edu/~tom/Game_Theory/Contents.html
 
 刪邊遊戲 hackenbush
 
+高僧斗法 nim
+
 sprout
 
 12594 - Naming Babies 斜率優化
