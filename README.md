@@ -18,6 +18,8 @@ STATE 搜尋  http://www.csie.ntnu.edu.tw/~u91029/State.html#1
 
 單調隊列 
 
+Tarjan http://www.csie.ntnu.edu.tw/~u91029/Component.html#3
+
 MATCH
 
 SPFA
