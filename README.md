@@ -1,6 +1,6 @@
 # Problem queue
 
-12594 - Naming Babies 斜率優化
+Empty
 
 # Problem category
 
