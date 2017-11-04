@@ -2,12 +2,6 @@
 
 https://www.math.ucla.edu/~tom/Game_Theory/Contents.html
 
-刪邊遊戲 hackenbush
-
-高僧斗法 nim
-
-sprout
-
 12594 - Naming Babies 斜率優化
 
 # Problem category
@@ -59,6 +53,10 @@ RMQ
 DP-插頭DP -http://www.csie.ntnu.edu.tw/~u91029/DynamicProgramming.html#1
 
 莫隊算法 區間眾數
+
+sprout
+
+hacken bush
 
 http://ykgsmudq.com/%E7%AE%97%E6%B3%95%E6%95%B4%E7%90%86/ 算法整理
 
