@@ -86,6 +86,8 @@ hamilton euler postman 暫時結束
 Nim 好像玩太久了 不小心就入坑了
 17/11/03
 
+吉普莉爾&史蒂芙 <3
+
 # Problem story
 
 1:遊戲人生
