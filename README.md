@@ -1,7 +1,5 @@
 # Problem queue
 
-https://www.math.ucla.edu/~tom/Game_Theory/Contents.html
-
 12594 - Naming Babies 斜率優化
 
 # Problem category
@@ -57,6 +55,8 @@ DP-插頭DP -http://www.csie.ntnu.edu.tw/~u91029/DynamicProgramming.html#1
 sprout
 
 hacken bush
+
+https://www.math.ucla.edu/~tom/Game_Theory/Contents.html game theory 論文
 
 http://ykgsmudq.com/%E7%AE%97%E6%B3%95%E6%95%B4%E7%90%86/ 算法整理
 
