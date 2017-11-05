@@ -6,7 +6,7 @@ Empty
 
 樹狀數組原理+求逆序數對
 
-BIT
+BIT 
 二次剩餘
 
 STATE 搜尋 http://www.csie.ntnu.edu.tw/~u91029/State.html#1
