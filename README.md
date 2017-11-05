@@ -6,6 +6,8 @@ http://www.csie.ntnu.edu.tw/~u91029/Sequence.html#3
 
 # Problem category
 
+Hackenbush及超現實數
+
 樹狀數組原理+求逆序數對
 
 BIT 
