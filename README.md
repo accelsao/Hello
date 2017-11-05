@@ -1,6 +1,6 @@
 # Problem queue
 
-Empty
+http://www.csie.ntnu.edu.tw/~u91029/Sequence.html#3
 
 # Problem category
 
