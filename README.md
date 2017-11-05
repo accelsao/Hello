@@ -1,5 +1,7 @@
 # Problem queue
 
+
+11610
 http://www.csie.ntnu.edu.tw/~u91029/Sequence.html#3
 
 # Problem category
