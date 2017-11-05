@@ -6,39 +6,35 @@ Empty
 
 樹狀數組原理+求逆序數對
 
+BIT
+
+二次剩餘
+
 STATE 搜尋 http://www.csie.ntnu.edu.tw/~u91029/State.html#1
 
 Tarjan http://www.csie.ntnu.edu.tw/~u91029/Component.html#3
 
 MATCH
 
-SPFA
-
 瓶頸生成樹
-
-區間
-
-dlx
-
-BIT
-
-edmondd 朱劉
-
-有向最小生成樹
-
-二次剩餘
-
-dp優化 http://pisces.ck.tp.edu.tw/~peng/index.php?action=showfile&file=fe8e302bf69142773c541b1133e43c7413a560a38 四邊形優化http://chino.taipei/code-2016-0402Algorithm-DP%E5%84%AA%E5%8C%96%E4%B9%8B%E5%9B%9B%E9%82%8A%E5%BD%A2%E4%B8%8D%E7%AD%89%E5%BC%8F%E5%84%AA%E5%8C%96/
-
-Ore's Theorem
-
-Knight's Tour
 
 LCA
 
 RMQ
 
 樹狀DP
+
+dlx
+
+edmondd 朱劉
+
+有向最小生成樹
+
+dp優化 http://pisces.ck.tp.edu.tw/~peng/index.php?action=showfile&file=fe8e302bf69142773c541b1133e43c7413a560a38 四邊形優化http://chino.taipei/code-2016-0402Algorithm-DP%E5%84%AA%E5%8C%96%E4%B9%8B%E5%9B%9B%E9%82%8A%E5%BD%A2%E4%B8%8D%E7%AD%89%E5%BC%8F%E5%84%AA%E5%8C%96/
+
+Ore's Theorem
+
+Knight's Tour
 
 樹鍊剖分
 
