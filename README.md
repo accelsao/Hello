@@ -4,6 +4,8 @@ Empty
 
 # Problem category
 
+樹狀數組原理+求逆序數對
+
 STATE 搜尋 http://www.csie.ntnu.edu.tw/~u91029/State.html#1
 
 Tarjan http://www.csie.ntnu.edu.tw/~u91029/Component.html#3
