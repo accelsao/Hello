@@ -3,6 +3,8 @@
 
 11610
 http://www.csie.ntnu.edu.tw/~u91029/Sequence.html#3
+d990: 最終章－痛ましいです
+字串比對
 
 # Problem category
 
