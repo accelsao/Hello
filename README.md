@@ -27,11 +27,13 @@ MATCH
 
 瓶頸生成樹
 
-LCA
+LCA http://www.csie.ntnu.edu.tw/~u91029/Graph2.html
 
 RMQ
 
 樹狀DP
+
+kruskal SPFA 各種問題http://www.csie.ntnu.edu.tw/~u91029/SpanningTree.html#2
 
 dlx
 
