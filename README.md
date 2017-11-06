@@ -3,8 +3,15 @@
 
 11610
 http://www.csie.ntnu.edu.tw/~u91029/Sequence.html#3
+
 d990: 最終章－痛ましいです
 字串比對
+
+蘋果之塔
+
+終末之塔
+
+1670 次小生成 轉LCA
 
 # Problem category
 
