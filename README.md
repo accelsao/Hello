@@ -9,11 +9,7 @@ d990: 最終章－痛ましいです
 
 終末之塔
 
-1670 次小生成 轉LCA
-
 # Problem category
-
-倍增LCA 練習 MST dfs head next??
 
 樹狀數組原理+求逆序數對
 
