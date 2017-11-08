@@ -7,7 +7,7 @@ http://www.csie.ntnu.edu.tw/~u91029/Sequence.html#3
 d990: 最終章－痛ましいです
 字串比對
 
-終末之塔
+終末之塔  我猜是跟這類似https://amoshyc.github.io/ojsolution-build/uva/p11354.html uva 11354
 
 # Problem category
 
