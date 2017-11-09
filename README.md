@@ -72,6 +72,8 @@ http://ykgsmudq.com/%E7%AE%97%E6%B3%95%E6%95%B4%E7%90%86/ 算法整理
 
 http://hzwer.com/1234.html 算法集庫
 
+http://www-igm.univ-mlv.fr/~lecroq/string/index.html STRING MATCHING ALGORITHMS
+
 # Mood notes
 堀北鈴音<3 
 
