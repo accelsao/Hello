@@ -11,7 +11,8 @@ string matching
 演算法筆記
 
 
-終末之塔  我猜是跟這類似https://amoshyc.github.io/ojsolution-build/uva/p11354.html uva 11354
+終末之塔
+樹 lca?
 
 # Problem category
 
