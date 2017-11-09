@@ -5,14 +5,9 @@
 http://www.csie.ntnu.edu.tw/~u91029/Sequence.html#3
 
 d990: 最終章－痛ましいです
-字串比對
-string
-string matching 
-演算法筆記
+KMP
 
-
-終末之塔
-樹 lca?
+終末之塔 繼續 確認c370
 
 # Problem category
 
