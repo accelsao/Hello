@@ -1,15 +1,21 @@
 # Problem queue
 
-
+線段樹
 11610
 http://www.csie.ntnu.edu.tw/~u91029/Sequence.html#3
 
 d990: 最終章－痛ましいです
 字串比對
+string
+string matching 
+演算法筆記
+
 
 終末之塔  我猜是跟這類似https://amoshyc.github.io/ojsolution-build/uva/p11354.html uva 11354
 
 # Problem category
+
+MST系列 
 
 樹狀數組原理+求逆序數對
 
