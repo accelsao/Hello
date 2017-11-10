@@ -1,11 +1,16 @@
 # Problem queue
 
-線段樹
-11610
-http://www.csie.ntnu.edu.tw/~u91029/Sequence.html#3
+f[][] me[][]怎麼來的 再確認
+出題
 
 d990: 最終章－痛ましいです
 KMP
+
+c370後續 不連續出題
+
+線段樹
+11610
+http://www.csie.ntnu.edu.tw/~u91029/Sequence.html#3
 
 # Problem category
 
