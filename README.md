@@ -7,8 +7,6 @@ http://www.csie.ntnu.edu.tw/~u91029/Sequence.html#3
 d990: 最終章－痛ましいです
 KMP
 
-終末之塔 繼續 確認c370
-
 # Problem category
 
 c370 先出連通圖 次小生成樹權和
