@@ -5,6 +5,9 @@
 d990: 最終章－痛ましいです
 KMP
 
+http://blog.fishc.com/2535.html
+图的存储结构（十字链表、邻接多重表、边集数组）
+
 線段樹
 11610
 http://www.csie.ntnu.edu.tw/~u91029/Sequence.html#3
