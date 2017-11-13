@@ -1,19 +1,6 @@
 # Problem queue
-
-出題*4
-
-d990: 最終章－痛ましいです
-KMP
-
-線段樹
-11610
-http://www.csie.ntnu.edu.tw/~u91029/Sequence.html#3
-
+CF N題解Challenge
 # Problem category
-
-c370 先出連通圖 次小生成樹權和
-未來出 不連通 求次小生成森林or樹
-參考morris 史蒂芙觀察日記 linkcut tree 求最小生成樹(森林)
 
 MST系列 
 
