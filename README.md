@@ -90,6 +90,11 @@ Nim 好像玩太久了 不小心就入坑了
 樹也是坑阿 太可怕了
 17/11/04
 
+有鑒於沒題解就無法AC
+RE:0 N題解practice
+on codeforceB
+17/11/14
+
 # Problem story
 
 1:遊戲人生
