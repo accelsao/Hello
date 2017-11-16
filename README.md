@@ -1,7 +1,7 @@
 # Problem queue
 
 Boruvka+Trie
-uva902+12526+1385
+uva12526+1385
 
 # Problem category
 
