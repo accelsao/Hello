@@ -98,7 +98,9 @@ RE:0 N題解practice
 on codeforceB
 17/11/14
 
-CF解題 UVA練題 ZJ出題
+CF解題 UVA練題 ZJ出題 
+寶石之國讚
+17/11/16
 
 # Problem story
 
