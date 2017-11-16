@@ -1,8 +1,4 @@
 # Problem queue
-
-Boruvka+Trie
-uva12526+1385
-
 # Problem category
 
 MST系列 
