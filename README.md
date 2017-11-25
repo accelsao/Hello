@@ -1,7 +1,7 @@
 # Problem queue
 # Problem category
 
-MST系列 
+Segment Tree
 
 樹狀數組原理+求逆序數對
 
@@ -10,8 +10,6 @@ BIT
 二次剩餘
 
 STATE 搜尋 http://www.csie.ntnu.edu.tw/~u91029/State.html#1
-
-Tarjan http://www.csie.ntnu.edu.tw/~u91029/Component.html#3
 
 MATCH
 
@@ -39,15 +37,10 @@ Knight's Tour
 
 樹鍊剖分
 
-字串符 最小表示法
 
 DP-插頭DP -http://www.csie.ntnu.edu.tw/~u91029/DynamicProgramming.html#1
 
 莫隊算法 區間眾數
-
-sprout
-
-hacken bush
 
 # Hyperlinks
 
