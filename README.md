@@ -6,8 +6,6 @@ BIT
 
 2-sat
 
-二次剩餘
-
 STATE 搜尋 http://www.csie.ntnu.edu.tw/~u91029/State.html#1
 
 MATCH
