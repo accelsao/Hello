@@ -73,6 +73,10 @@ CF解題 UVA練題 ZJ出題
 寶石之國讚
 17/11/16
 
+可...可惡 要自己生出AC code真難
+2-Sat??Segment Tree?BIT?? Not a piece of cake..
+好久沒出題了...不過下次出題應該就是2018了吧?
+17/11/25
 # Problem story
 
 1:遊戲人生
