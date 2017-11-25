@@ -2,9 +2,9 @@
 # Problem category
 Segment Tree
 
-樹狀數組原理+求逆序數對
+BIT
 
-BIT 
+2-sat
 
 二次剩餘
 
