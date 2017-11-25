@@ -1,9 +1,5 @@
 # Problem queue
 # Problem category
-
-http://www.cnblogs.com/flipped/p/5005693.html
-
-
 Segment Tree
 
 樹狀數組原理+求逆序數對
