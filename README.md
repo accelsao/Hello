@@ -1,5 +1,5 @@
 # Problem queue
-出完兩題 the CF
+出完兩題 then CF
 # Problem category
 HLD+Link-cut Tree
 
