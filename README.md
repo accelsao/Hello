@@ -1,8 +1,6 @@
 # Problem queue
-出完兩題 then CF
+CF
 # Problem category
-HLD+Link-cut Tree
-
 Segment Tree
 
 BIT
