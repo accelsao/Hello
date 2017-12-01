@@ -1,9 +1,7 @@
 # Problem queue
-CF
+Segment Tree
 # Problem category
 斯特林數
-
-Segment Tree
 
 BIT
 
