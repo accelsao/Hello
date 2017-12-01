@@ -63,6 +63,9 @@ CF解題 UVA練題 ZJ出題
 2-Sat??Segment Tree?BIT?? Not a piece of cake..
 好久沒出題了...不過下次出題應該就是2018了吧?
 17/11/25
+
+可恨的線段樹阿 怎麼都摸不透 qq..
+17/12/01
 # Problem story
 
 1:遊戲人生
