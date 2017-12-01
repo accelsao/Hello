@@ -1,29 +1,13 @@
 # Problem queue
 Segment Tree
+區間操作
 # Problem category
-斯特林數
-
-BIT
-
-2-sat
 
 MATCH
 
-MST系列
+MST系列+SPFA 各種問題http://www.csie.ntnu.edu.tw/~u91029/SpanningTree.html#2
 
-Tarjan
-
-LCA http://www.csie.ntnu.edu.tw/~u91029/Graph2.html
-
-樹鍊剖分/Link-cut Tree/各種Tree
-
-RMQ
-
-SPFA 各種問題http://www.csie.ntnu.edu.tw/~u91029/SpanningTree.html#2
-
-DP優化 http://pisces.ck.tp.edu.tw/~peng/index.php?action=showfile&file=fe8e302bf69142773c541b1133e43c7413a560a38 四邊形優化http://chino.taipei/code-2016-0402Algorithm-DP%E5%84%AA%E5%8C%96%E4%B9%8B%E5%9B%9B%E9%82%8A%E5%BD%A2%E4%B8%8D%E7%AD%89%E5%BC%8F%E5%84%AA%E5%8C%96/
-
-莫隊算法 區間眾數
+莫隊
 
 # Hyperlinks
 
