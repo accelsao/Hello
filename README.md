@@ -1,17 +1,9 @@
 # Problem queue
 hash(POJ 3274,POJ 2151,POJ 1840,POJ 2002,POJ 2503)
 # Problem category
-Segment Tree
-區間操作
-
-FLOW
-
 MATCH
 
-MST系列+SPFA 各種問題http://www.csie.ntnu.edu.tw/~u91029/SpanningTree.html#2
-
 莫隊
-
 # Hyperlinks
 
 https://www.math.ucla.edu/~tom/Game_Theory/Contents.html game theory 論文
