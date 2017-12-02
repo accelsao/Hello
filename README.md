@@ -1,5 +1,5 @@
 # Problem queue
-hash(POJ 3349,POJ 3274,POJ 2151,POJ 1840,POJ 2002,POJ 2503)
+hash(POJ 3274,POJ 2151,POJ 1840,POJ 2002,POJ 2503)
 # Problem category
 Segment Tree
 區間操作
