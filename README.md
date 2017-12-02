@@ -1,5 +1,7 @@
 # Problem queue
 # Problem category
+Hash
+
 MATCH
 
 樹DP
