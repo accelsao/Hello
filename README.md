@@ -23,6 +23,8 @@ http://hzwer.com/1234.html 算法集庫
 http://www-igm.univ-mlv.fr/~lecroq/string/index.html STRING MATCHING ALGORITHMS
 
 http://www.geeksforgeeks.org/how-to-prepare-for-acm-icpc/ ACM算法
+
+http://blog.csdn.net/a1dark/article/details/11714009 POJ題目
 # Mood notes
 堀北鈴音<3 
 
