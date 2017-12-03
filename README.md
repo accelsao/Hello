@@ -1,15 +1,13 @@
 # Problem queue
 CF很多題 在這做
 # Problem category
-Hash
-
 MATCH
-
-樹DP
 
 快速傅里叶变换
 
 莫隊
+
+樹
 # Hyperlinks
 
 https://www.math.ucla.edu/~tom/Game_Theory/Contents.html game theory 論文
