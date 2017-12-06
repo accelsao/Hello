@@ -1,15 +1,4 @@
-# Problem queue
-CF很多題 在這做
-# Problem category
-MATCH
-
-快速傅里叶变换
-
-莫隊
-
-Cartesian tree
 # Hyperlinks
-
 https://www.math.ucla.edu/~tom/Game_Theory/Contents.html game theory 論文
 
 http://ykgsmudq.com/%E7%AE%97%E6%B3%95%E6%95%B4%E7%90%86/ 算法整理
