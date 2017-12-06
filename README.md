@@ -7,7 +7,7 @@ MATCH
 
 莫隊
 
-樹
+Cartesian tree
 # Hyperlinks
 
 https://www.math.ucla.edu/~tom/Game_Theory/Contents.html game theory 論文
