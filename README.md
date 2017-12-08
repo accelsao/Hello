@@ -1,5 +1,5 @@
 # Problem Queue
-POJ 3580 splay 各種操作
+CF+CSA
 # Hyperlinks
 https://www.math.ucla.edu/~tom/Game_Theory/Contents.html game theory 論文
 
