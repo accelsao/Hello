@@ -1,8 +1,8 @@
-Fast power algorithm
+#Fast power algorithm
 LL pw(LL a, LL b,LL M) { return b ? b & 1 ? a*pw(a, b - 1) % M : pw(a*a%M, b >> 1) : 1; }
-GCD
+#GCD
 int gcd(int a, int b) { return b ? gcd(b, a%b) : a };
-BIT
+#BIT
 void add(int x){
 	while (x<N){
 		d[x]++;
