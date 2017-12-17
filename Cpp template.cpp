@@ -36,4 +36,4 @@ def ext_euclid(a, b):
         x, y, q = ext_euclid(b, a % b) 
         x, y = y, (x - (a // b) * y)
         return x, y, q
-#ext_euclid(a,b) return x,y,gcd(a,b) ,ax+by=1
+ext_euclid(a,b) return x,y,gcd(a,b) ,ax+by=1
