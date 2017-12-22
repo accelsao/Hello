@@ -1,6 +1,9 @@
 # Problem Queue
-CF>CSA>AT
-https://oj.icpc.tw/
+http://codeforces.com/contest/846/submission/30156664 http://codeforces.com/blog/entry/54357#comment-402048
+846C-O(n)
+
+839D - Winter is here
+
 # Hyperlinks
 https://www.math.ucla.edu/~tom/Game_Theory/Contents.html game theory 論文
 
