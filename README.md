@@ -1,6 +1,5 @@
 # Problem Queue
-http://codeforces.com/contest/846/submission/30156664 http://codeforces.com/blog/entry/54357#comment-402048
-846C-O(n)
+Black White Tree
 
 839D - Winter is here
 
