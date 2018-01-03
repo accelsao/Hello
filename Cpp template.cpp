@@ -44,7 +44,7 @@ ext_euclid(a,b) return x,y,gcd(a,b) ,ax+by=1
 #Devc++
 #include <bits/stdc++.h>
 #define LL long long
-#define Accel ios::sync_with_stdio(0), cin.tie(0), cout.tie(0)
+#define Accel ios::sync_with_stdio(0), cin.tie(0), cout.tie(0);
 #define Re(a,b) memset(a,b,sizeof a)
 #define F first
 #define S second
@@ -60,9 +60,11 @@ ext_euclid(a,b) return x,y,gcd(a,b) ,ax+by=1
 #define rs rc,MID+1,r
 #define st 1,1,n
 using namespace std;
-LL pw(LL a, LL b,LL M) { return b ? b & 1 ? a*pw(a, b - 1) % M : pw(a*a%M, b >> 1) : 1; }
-LL gcd(LL a, LL b) { return b ? gcd(b, a%b) : a };
+LL pw(LL a, LL b,LL M) { return b ? b & 1 ? a*pw(a, b - 1,M) % M : pw(a*a%M, b >> 1,M) : 1; }
+LL gcd(LL a, LL b) { return b ? gcd(b, a%b) : a; }
 const int N=210;
 const int M=1e9+7;
+int main(){Accel
+}
 ----
 			
