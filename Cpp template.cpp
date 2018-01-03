@@ -1,4 +1,4 @@
-#Precode
+#Precode for VS
 #include<iostream>
 #include<cmath>
 #include<algorithm>
@@ -24,17 +24,14 @@ using namespace std;
 int main(){
 Accel;
 }
--
-#include<bits/stdc++.h>
-using namespace std;
-int main(){
-	ios::sync_with_stdio(0), cin.tie(0), cout.tie(0);
-}
+----
 #Fast power algorithm
 LL pw(LL a, LL b,LL M) { return b ? b & 1 ? a*pw(a, b - 1) % M : pw(a*a%M, b >> 1) : 1; }
+----
 #GCD
 int gcd(int a, int b) { return b ? gcd(b, a%b) : a };
-#EXGCD
+----
+#EXGCD for py
 def ext_euclid(a, b):
     if (b == 0):
         return 1, 0, a
@@ -43,3 +40,16 @@ def ext_euclid(a, b):
         x, y = y, (x - (a // b) * y)
         return x, y, q
 ext_euclid(a,b) return x,y,gcd(a,b) ,ax+by=1
+----
+#Devc++
+#include <bits/stdc++.h>
+#define LL long long
+#define Accel ios::sync_with_stdio(0), cin.tie(0), cout.tie(0)
+#define Re(a,b) memset(a,b,sizeof a)
+using namespace std;
+const int N=210;
+const int M=1e9+7;
+LL pw(LL a, LL b,LL M) { return b ? b & 1 ? a*pw(a, b - 1) % M : pw(a*a%M, b >> 1) : 1; }
+LL gcd(LL a, LL b) { return b ? gcd(b, a%b) : a };
+----
+			
