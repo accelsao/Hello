@@ -60,6 +60,7 @@ ext_euclid(a,b) return x,y,gcd(a,b) ,ax+by=1
 #define rs rc,MID+1,r
 #define st 1,1,n
 #define PII pair<int,int>
+#define PLL pair<LL,LL>
 using namespace std;
 //LL pw(LL a, LL b,LL M) { return b ? b & 1 ? a*pw(a, b - 1,M) % M : pw(a*a%M, b>>1,M) : 1; }
 //void add(int x){while(x<N)BIT[x]++,x+=x&-x;}
