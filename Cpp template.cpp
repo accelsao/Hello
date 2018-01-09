@@ -68,7 +68,5 @@ using namespace std;
 //int find(int x){return x==p[x]?x:p[x]=find(p[x]);}
 const int N=1e5+1;
 const int M=1e9+7;
-int main(){
+int main(){Accel
 }
-----
-			
