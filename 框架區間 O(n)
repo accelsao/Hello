@@ -1,0 +1,34 @@
+題意：給一個1~n的數字排列，求數對(i, j)的數量，使得π[i...j]區間內的兩個極值分別落在兩界，並且此區間包含了π[i]~π[j]間的所有數字，其中1≤i<j≤n，而我們則將這種區間稱作框架區間。（附件為原題）
+
+題目來源是交大今年辦的高中生比賽，當時n最大好像是5e3，O(n2•log(n))的RMQ檢查應該過不了全部測資；但原題設計只要掃過去，順便紀錄min、max就可以O(n2)順利AC。活動結束後，因為慶功宴大家等得有點無聊，所以就開始想該不會有O(n)解法，討論了一下竟然還真的找到了！
+
+在不失一般性的情況下，我們只考慮π[i]<π[j]的情況，然後只要將序列反過來再做一次就行了。
+觀察１：首先我們有π[j]-π[i]+1=j-i+1，因為框架區間內共包含了π[i]到π[j]的所有數字。
+利用以上特性，我們用算式π[i]+n-i為每個格子編號，由此不難看出，只有同樣編號的i, j才有可能形成框架區間（所有編號皆小於2n）。
+觀察２：顯然若i, j, k同編號且(i, j)、(j, k)皆為框架區間，則(i, k)為框架區間。
+觀察３：若i, j同編號且i, j間沒有其他同編號的數字，但存在i≤k<j且π[k]>π[j]，則不存在t≤i且(t, j)為框架區間。
+觀察４：若i, j同編號且i, j間沒有其他同編號的數字，但存在i<k≤j且π[k]<π[i]，則不存在t≥j且(i, t)為框架區間。
+有了這些觀察以後，我們就可以透過2n個stack來實做線性算法。
+
+Define π[0]=INF and π[n+1]=-INF
+For 1≤i≤n, find mr[i]=min{ j | j>i && π[j]<π[i] }
+For 1≤i≤n, find ml[i]=max{ j | j<i && π[j]>π[i] }
+The above two steps can be done in linear time with operations on a stack.
+Now we need to calculate c[1...n], c[i]=|{ j | j<i && (j, i) is a framed interval }|
+S[0...2n] is an array of stacks we maintain. S[i] keeps track of indices that are possible to be the left end of a framed interval of group i. Initially, 0 is at the bottom of all stacks to signify end of stack.
+
+for(i=1; i<n; i++)
+    denote S[ π[i]+n-i ] as s;
+
+    while( ml[i]<s.top() && mr[s.top()]<i )
+        s.pop();
+
+    if( ml[i]<s.top() )
+        c[i]=c[s.top()]+1;
+
+    s.push(i);
+end
+
+return sum of c[1...n]
+
+來源:https://sites.google.com/site/pccanctu/home/interval
