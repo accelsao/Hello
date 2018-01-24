@@ -35,7 +35,6 @@ int find(int x){return x==p[x]?x:p[x]=find(p[x]);}
 void kruskal(){
 	int c=0;
 	REP(i,m){
-		//cout<<E[i].c;
 		int x=find(E[i].x),y=find(E[i].y);
 		if(x!=y){
 			p[x]=y;
@@ -49,7 +48,6 @@ void kruskal(){
 int dep[N];
 int fa[N][21],w[N][21];
 void dfs(int u){
-	//cout<<u<<endl;
 	for(auto i:Tr[u]){
 		int v=i.to;
 		if(dep[v])continue;
@@ -63,8 +61,8 @@ int lca(int x,int y){
 	int ans=1e9;
 	if(dep[x]<dep[y])swap(x,y);
 	int k=dep[x]-dep[y];
-	for(int i=20;~i;i--)
-		if(dep[fa[x][i]]>=dep[y])
+	REP(i,21)
+		if((k>>i)&1)
 			ans=min(ans,w[x][i]),x=fa[x][i];
 	if(x==y)return ans;
 	for(int i=20;~i;i--)
@@ -79,7 +77,6 @@ int main(){Accel
 	E.resize(m+1);
 	REP(i,m)cin>>E[i].x>>E[i].y>>E[i].c;
 	sort(ALL(E),cmp);
-	//FOR(i,1,m)cout<<E[i].c<<endl;
 	FOR(i,1,n)p[i]=i;
 	kruskal();
 	dep[1]=1;
@@ -89,10 +86,6 @@ int main(){Accel
 		dep[i]=1;
 		dfs(i);
 	}
-	
-	//FOR(i,1,n)cout<<dep[i]<<" ";
-	//cout<<endl;
-	
 	FOR(j,1,20)
 		FOR(i,1,n)
 			fa[i][j]=fa[fa[i][j-1]][j-1],
