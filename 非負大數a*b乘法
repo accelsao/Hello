@@ -21,24 +21,15 @@ const int N = (1 << 20);
 int ans[N];
 C a[N], b[N];
 string s,t;
-
 void FFT(C* a, int n, int t) {
-  // bit-reversal permutation 
-	/*for (int i = 1, j = n >> 1, k; i < n-1; ++i){
-		if (i < j) swap(a[i], a[j]);
-		for (k = n >> 1; j >= k; j -= k, k >>= 1);
-		j += k;
-	}
-	*/
+  	// bit-reversal permutation 
 	for (int i=1, j=0; i<n; ++i){
-     for (int k=n>>1; k>(j^=k); k>>=1) ;
-      if (i<j) swap(a[i], a[j]);
+    	for (int k=n>>1; k>(j^=k); k>>=1) ;
+    	if (i<j) swap(a[i], a[j]);
     }
-	
 	for (int k = 2; k <= n; k <<= 1) {
 		double g=2.0*t*PI/k;
 	    C dw(cos(g),sin(g));
-		//C dw(cos(2.0 * t * PI / k), sin(2.0 * t * PI / k));
 	    for (int j = 0; j < n; j += k) {
 	    	C w(1);
 	    	for (int i = j; i < j + k/2; i++) {
@@ -49,6 +40,7 @@ void FFT(C* a, int n, int t) {
 	      	}
 	    }
   	}
+  	//逆FFT 除n 
 	if (t == -1) 
 		REP(i,n)a[i] /= n;
 }
