@@ -41,7 +41,6 @@ def ext_euclid(a, b):
         return x, y, q
 ext_euclid(a,b) return x,y,gcd(a,b) ,ax+by=1
 ----
-#Devc++
 #include <bits/stdc++.h>
 #define LL long long
 #define Accel ios::sync_with_stdio(0), cin.tie(0), cout.tie(0);
@@ -62,10 +61,14 @@ const double eps=1e-6;
 typedef complex<double>C;
 const double PI(acos(-1.0));
 //size() use int
+//__gcd
+//c(n,k)=c(n-1,k-1)+c(n-1,k)
+//c(i,r),i for r to n =c(n+1,r+1)
 //void add(int x){while(x<N)BIT[x]++,x+=x&-x;}
 //int sum(int x){return x?BIT[x]+sum(x-(x&-x)):0;}
 //int find(int x){return x==p[x]?x:p[x]=find(p[x]);}
 //LL pw(LL a, LL b,LL M) { return b ? b & 1 ? a*pw(a, b - 1,M) % M : pw(a*a%M, b>>1,M) : 1; }
 //log() = ln()
+//watch out LL
 int main(){Accel
 }
