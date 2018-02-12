@@ -41,6 +41,7 @@ void build(int rt,int l,int r){
 void up(int L,int R,int k,int d){
 	int l=L+rt-1;
 	int r=R+rt+1;
+	//轉為開區間
 	while(l^r^1){
 		if(~l&1)
 			sm[l^1]+=k+(tr[l^1]-L)*d,D[l^1]+=d;
@@ -59,7 +60,7 @@ int find(int p){
 int main(){Accel
 	cin>>n>>q;
 	
-	while(rt<=n+1)rt<<=1;
+	while(rt<=n+1)rt<<=1;//zkw 開區間 只能查[1,2^N-2] 2^N<=n+1 再開2倍
 	build(1,1,rt);
 	FOR(i,1,n)cin>>sm[i+rt];
 	REP(i,q){
