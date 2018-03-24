@@ -1,6 +1,4 @@
 # Problem Queue
-Black White Tree-CSA
-
 # Hyperlinks
 https://www.math.ucla.edu/~tom/Game_Theory/Contents.html game theory 論文
 
@@ -25,6 +23,8 @@ https://twitter.com/anta_prg/ anta's twitter
 4:美好世界
 
 5:實力主義
+
+6:比宇宙更遠的地方
 # Blog reference
 http://www.cnblogs.com/lidaxin/
 
