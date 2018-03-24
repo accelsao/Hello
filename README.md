@@ -33,6 +33,4 @@ http://morris821028.github.io/
 http://medalplus.com/
 
 http://blog.sina.com.cn/s/blog_e96c26d20102v50h.html
-# HW
-Discrete Math
-https://drive.google.com/drive/folders/0B5pZx0fwHoYFa2c1ZHFyNmlwbW8
+
