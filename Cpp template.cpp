@@ -25,8 +25,8 @@ const double PI(acos(-1.0));
 //c(n,k)=c(n-1,k-1)+c(n-1,k)
 //c(i,r),i for r to n =c(n+1,r+1)
 //void add(int x){while(x<N)BIT[x]++,x+=x&-x;}
-//int sum(int x){return x?BIT[x]+sum(x-(x&-x)):0;}
-//int find(int x){return x==p[x]?x:p[x]=find(p[x]);}
+//void add(int x){while(x<N)BIT[x]++,x+=x&-x;}
+//int sum(int x){int t=0;while(x){t+=BIT[x];x-=x&-x;}return t;}
 //LL pw(LL a,LL b){LL t=1;for(;b;b>>=1,a=a*a%M)b&1?t=t*a%M:0;return t;}
 //log() = ln() , log(x)/log(y)=log(y)-base-x
 //INT_MAX 127,INT_MIN 128
