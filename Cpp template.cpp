@@ -34,4 +34,14 @@ const double PI(acos(-1.0));
 //int dw[8][2]={{0,1},{1,0},{0,-1},{-1,0},{1,1},{1,-1},{-1,1},{-1,-1}};
 //cout<<fixed<<setprecision(12)<<ans<<endl;
 //__builtin_popcount(mask)
-int main(){Accel}
+int main(){Accel
+
+}
+
+struct Node {
+    int l, r;
+    int val;
+    
+    Node() : l(), r(), val() {}
+    Node(int _l, int _r) : l(_l), r(_r), val(0) {}
+};
