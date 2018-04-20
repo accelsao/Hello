@@ -14,11 +14,9 @@
 #define SZ(a) ((int)a.size())
 //#pragma GCC optimize(2)
 using namespace std;
-const int N=1e6+1;
-const int M=1e9+7;
-const double eps=1e-6;
-typedef complex<double>C;
-const double PI(acos(-1.0));
+//const double eps=1e-6;
+//typedef complex<double>C;
+//const double PI(acos(-1.0));
 //for(int mask=i;mask>0;mask=(mask-1)&i)
 //int a[25]= { 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97 };
 //__gcd, atan2(y,x)=y/x , __int128
@@ -30,15 +28,15 @@ const double PI(acos(-1.0));
 //LL pw(LL a,LL b){LL t=1;for(;b;b>>=1,a=a*a%M)b&1?t=t*a%M:0;return t;}
 //log() = ln() , log(x)/log(y)=log(y)-base-x
 //INT_MAX 127,INT_MIN 128
-//bitset for (int pos = b._Find_first(); pos != b.size(); pos = b._Find_next(pos))
 //int dw[4][2]={{0,1},{1,0},{0,-1},{-1,0}};
 //int dw[8][2]={{0,1},{1,0},{0,-1},{-1,0},{1,1},{1,-1},{-1,1},{-1,-1}};
 //cout<<fixed<<setprecision(12)<<ans<<endl;
 //__builtin_popcount(mask)
+const int N=1e6+1;
+const int M=1e9+7;
 int main(){Accel
+
 }
-
-
 
 // hash template
 const LL M1=1e9+7;
@@ -68,3 +66,10 @@ struct 	hsh{
 	
 };
 hsh pw[N],hs[N];
+struct Node {
+    int l, r;
+    int val;
+    
+    Node() : l(), r(), val() {}
+    Node(int _l, int _r) : l(_l), r(_r), val(0) {}
+};
