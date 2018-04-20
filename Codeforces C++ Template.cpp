@@ -25,18 +25,49 @@ const double PI(acos(-1.0));
 //c(n,k)=c(n-1,k-1)+c(n-1,k)
 //c(i,r),i for r to n =c(n+1,r+1)
 //void add(int x){while(x<N)BIT[x]++,x+=x&-x;}
-//void add(int x){while(x<N)BIT[x]++,x+=x&-x;}
-//int sum(int x){int t=0;while(x){t+=BIT[x];x-=x&-x;}return t;}
+//int sum(int x){int s=0;while(x){s+=BIT[x];x-=x&-x;}return s;}
+//int find(int x){return x==p[x]?x:p[x]=find(p[x]);}
 //LL pw(LL a,LL b){LL t=1;for(;b;b>>=1,a=a*a%M)b&1?t=t*a%M:0;return t;}
 //log() = ln() , log(x)/log(y)=log(y)-base-x
 //INT_MAX 127,INT_MIN 128
+//bitset for (int pos = b._Find_first(); pos != b.size(); pos = b._Find_next(pos))
 //int dw[4][2]={{0,1},{1,0},{0,-1},{-1,0}};
 //int dw[8][2]={{0,1},{1,0},{0,-1},{-1,0},{1,1},{1,-1},{-1,1},{-1,-1}};
 //cout<<fixed<<setprecision(12)<<ans<<endl;
 //__builtin_popcount(mask)
 int main(){Accel
-
 }
+
+
+
+// hash template
+struct hsh{
+	LL a,b;
+	const LL M1=1e9+7;
+	const LL M2=1e9+9;
+	hsh(){
+		a=b=0;
+	}
+	hsh(LL x){
+		a=x%M1;
+		b=x%M2;
+	}
+	hsh(LL A,LL B){
+		a=A%M1;
+		b=B%M2; 
+	}
+	hsh operator*(hsh x){
+		return hsh(a*x.a,b*x.b);
+	}
+	hsh operator+(hsh x){
+		return hsh(a*x+a,b*x+b);
+	}
+	LL get(){
+		return a*M2+b;
+	}
+	
+};
+
 
 struct Node {
     int l, r;
