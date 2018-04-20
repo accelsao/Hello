@@ -32,7 +32,7 @@ using namespace std;
 //int dw[8][2]={{0,1},{1,0},{0,-1},{-1,0},{1,1},{1,-1},{-1,1},{-1,-1}};
 //cout<<fixed<<setprecision(12)<<ans<<endl;
 //__builtin_popcount(mask)
-const int N=1e6+1;
+const int N=1234567;
 const int M=1e9+7;
 int main(){Accel
 
