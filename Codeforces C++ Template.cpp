@@ -41,10 +41,10 @@ int main(){Accel
 
 
 // hash template
-struct hsh{
+const LL M1=1e9+7;
+const LL M2=1e9+9;
+struct 	hsh{
 	LL a,b;
-	const LL M1=1e9+7;
-	const LL M2=1e9+9;
 	hsh(){
 		a=b=0;
 	}
@@ -57,22 +57,14 @@ struct hsh{
 		b=B%M2; 
 	}
 	hsh operator*(hsh x){
-		return hsh(a*x.a,b*x.b);
+		return hsh(x.a*a,x.b*b);
 	}
 	hsh operator+(hsh x){
-		return hsh(a*x+a,b*x+b);
+		return hsh(x.a+a,x.b+b);
 	}
 	LL get(){
 		return a*M2+b;
 	}
 	
 };
-
-
-struct Node {
-    int l, r;
-    int val;
-    
-    Node() : l(), r(), val() {}
-    Node(int _l, int _r) : l(_l), r(_r), val(0) {}
-};
+hsh pw[N],hs[N];
