@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#define ld long double
 #define LL long long
 #define Accel ios::sync_with_stdio(0), cin.tie(0), cout.tie(0);
 #define Re(a,b) memset(a,b,sizeof a)
@@ -14,9 +15,9 @@
 #define SZ(a) ((int)a.size())
 //#pragma GCC optimize(2)
 using namespace std;
-//const double eps=1e-6;
 //typedef complex<double>C;
 //const double PI(acos(-1.0));
+//const double eps(1e-8);
 //for(int mask=i;mask>0;mask=(mask-1)&i)
 //int a[25]= { 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97 };
 //__gcd, atan2(y,x)=y/x , __int128
@@ -38,7 +39,8 @@ int main(){Accel
 
 }
 
-// hash template
+
+// Hash
 const LL M1=1e9+7;
 const LL M2=1e9+9;
 struct 	hsh{
@@ -66,10 +68,41 @@ struct 	hsh{
 	
 };
 hsh pw[N],hs[N];
-struct Node {
-    int l, r;
-    int val;
-    
-    Node() : l(), r(), val() {}
-    Node(int _l, int _r) : l(_l), r(_r), val(0) {}
+
+//Point2D
+struct point{ 
+    int x,y;  
+    point(){}  
+    point(int x_,int y_){x=x_;y=y_;}  
+    bool operator < (const point& b)const  
+    {  
+        return x!=b.x?x<b.x:y<b.y;  
+    }  
+    point operator - (const point& b)const  
+    {  
+        return point(x-b.x,y-b.y);  
+    }  
+    LL operator * (const point& b)const  
+    {  
+        return (LL)x*b.y-(LL)y*b.x;  
+    }  
+}a[N];
+
+//Complex number
+struct Complex{
+	ld real ,image;
+	Complex(ld _real,ld _image){
+		real=_real;
+		image=_image;
+	}
+	Complex(){}
 };
+Complex operator+(const Complex &c1, const Complex &c2){  
+    return Complex(c1.real + c2.real, c1.image + c2.image);  
+}
+Complex operator - (const Complex &c1, const Complex &c2){  
+    return Complex(c1.real - c2.real, c1.image - c2.image);  
+}  
+Complex operator * (const Complex &c1, const Complex &c2)  {  
+    return Complex(c1.real*c2.real - c1.image*c2.image, c1.real*c2.image + c1.image*c2.real);  
+} 
