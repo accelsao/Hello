@@ -1,0 +1,17 @@
+Anaconda3安裝
+Anaconda 安裝 tensorflow
+->官方https://www.tensorflow.org/install/install_windows
+Installing with Anaconda
+Anaconda 安裝 gym
+
+open Anaconda prompt(系統管理員執行)
+activate tensorflow
+pip install gym
+
+Test:
+import gym
+env = gym.make('CartPole-v0')
+env.reset()
+for _ in range(1000):
+    env.render()
+    env.step(env.action_space.sample()) # take a random action
