@@ -13,6 +13,14 @@ http://www.geeksforgeeks.org/how-to-prepare-for-acm-icpc/ ACM算法
 http://blog.csdn.net/a1dark/article/details/11714009 POJ題目
 
 https://twitter.com/anta_prg/ anta's twitter
+
+
+Top oj to  practice
+Csacademy=Atcoder>Codeforces by dreamoon
+
+though my favorite is codeforces
+
+
 # Problem story
 1:遊戲人生
 
