@@ -1,4 +1,3 @@
-# Problem Queue
 # Hyperlinks
 https://www.math.ucla.edu/~tom/Game_Theory/Contents.html game theory 論文
 
@@ -14,25 +13,6 @@ http://blog.csdn.net/a1dark/article/details/11714009 POJ題目
 
 https://twitter.com/anta_prg/ anta's twitter
 
-
-Top oj to  practice
-Csacademy=Atcoder>Codeforces by dreamoon
-
-though my favorite is codeforces
-
-
-# Problem story
-1:遊戲人生
-
-2:Overlord
-
-3:RE0
-
-4:美好世界
-
-5:實力主義
-
-6:比宇宙更遠的地方
 # Blog reference
 http://www.cnblogs.com/lidaxin/
 
