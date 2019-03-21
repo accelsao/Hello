@@ -1,31 +1,23 @@
 # To Do List
-Mo Algorithm
-FFT
-整理上述 CPP為佳 ,可更MD入Blog
-
-
+```
+	Mo Algorithm
+	FFT
+	整理上述 CPP為佳 ,可更MD入Blog
+```
 # Hyperlinks
 
 [Game Theory, Second Edition, 2014](https://www.math.ucla.edu/~tom/Game_Theory/Contents.html)
 
-http://ykgsmudq.com/%E7%AE%97%E6%B3%95%E6%95%B4%E7%90%86/ 算法整理
+[GeeksforGeeks](https://www.geeksforgeeks.org/)
 
-http://hzwer.com/1234.html 算法集庫
+[算法整理](http://ykgsmudq.com/%E7%AE%97%E6%B3%95%E6%95%B4%E7%90%86/)
 
-http://www-igm.univ-mlv.fr/~lecroq/string/index.html STRING MATCHING ALGORITHMS
+[OI省选算法汇总](http://hzwer.com/1234.html)
 
-http://www.geeksforgeeks.org/how-to-prepare-for-acm-icpc/ ACM算法
+[EXACT STRING MATCHING ALGORITHMS](http://www-igm.univ-mlv.fr/~lecroq/string/index.html)
 
-http://blog.csdn.net/a1dark/article/details/11714009 POJ題目
+[How to prepare for ACM – ICPC?](https://www.geeksforgeeks.org/how-to-prepare-for-acm-icpc/)
 
-https://twitter.com/anta_prg/ anta's twitter
+[POJ题目分类推荐](https://blog.csdn.net/a1dark/article/details/11714009)
 
-# Blog reference
-http://www.cnblogs.com/lidaxin/
-
-http://morris821028.github.io/
-
-http://medalplus.com/
-
-http://blog.sina.com.cn/s/blog_e96c26d20102v50h.html
 
