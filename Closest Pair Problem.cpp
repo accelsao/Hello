@@ -1,3 +1,11 @@
+/*
+input:
+n 2d points
+output:
+cloest pair
+time complexity: nlog(n) 
+*/ 
+
 #include <bits/stdc++.h>
 #define ld long double
 #define LL long long
@@ -171,3 +179,5 @@ int main(){Accel
 
 
 */
+
+
