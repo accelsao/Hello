@@ -1,2 +1,2 @@
 # TODO
-Algorithm - Hard
+- [ ] Count Strings (regex to NFA to DFA)
