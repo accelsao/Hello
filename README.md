@@ -1,5 +1,4 @@
 # To Do
-Any things might be Here!!!
 - [X] ATCoder
 - [X] Codeforces
 - [X] CSAcademy
@@ -12,6 +11,10 @@ Any things might be Here!!!
 - [ ] Sudoku + DLX
 - [ ] UVa
 - [ ] ZeroJudge
+- [X] NFA + DFA
+- [ ] AC自動機
+- [ ] suffix array w double shift
+- [ ] SA with D3C
 
 # Hyperlinks
 
