@@ -1,34 +1,29 @@
 #include "sudoku.h"
+#include <algorithm>
+#include <ctime>
+#include <cassert>
 
+clock_t start_time, end_time;
 
 void Sudoku::InitCover() {
-	int index = 0;
 	for (int i = 0; i < Size; i++)
-		for (int j = 0; j < Size; j++) {
+		for (int j = 0; j < Size; j++)
 			if (board[i][j]) {
 				bool done = 0;
-				Node* Col = HeadNode->right;
-				while (Col != HeadNode && !done) {
-					Node* cur = Col->down;
-					while (cur != Col && !done) {
-						if (cur->cell_ID[0] == board[i][j] &&
-							cur->cell_ID[1] == i + 1 &&
-							cur->cell_ID[2] == j + 1) {
-							coverColumn(Col);
-							Node* cell = cur->right;
-							while (cell != cur) {
-								coverColumn(cell->head);
-								cell = cell->right;
-							}
+				for (Node* ColumnHead = HeadNode->right; ColumnHead != HeadNode && !done; ColumnHead = ColumnHead->right)
+					for (Node* row = ColumnHead->down; row != ColumnHead && !done; row = row->down) {
+						if (row->cell_ID[0] == board[i][j] &&
+							row->cell_ID[1] == i + 1 &&
+							row->cell_ID[2] == j + 1) {
+							solution[row->cell_ID[1] - 1][row->cell_ID[2] - 1] = row->cell_ID[0];
 							done = 1;
+							coverColumn(ColumnHead);
+							for (Node* cell = row->right; cell != row; cell = cell->right) {
+								coverColumn(cell->head);
+							}
 						}
-						cur = cur->down;
 					}
-					Col = Col->right;
-				}
-
 			}
-		}
 }
 
 void Sudoku::coverColumn(Node* col) {
@@ -79,7 +74,7 @@ void Sudoku::BuildLinkedList() {
 	header->head = header;
 	Node* temp = header;
 
-	// Create Columns
+	// Create Columns Head
 	for (int i = 0; i < Colcs; i++) {
 		Node* newNode = new Node;
 		newNode->size = 0;
@@ -88,7 +83,7 @@ void Sudoku::BuildLinkedList() {
 		newNode->head = newNode;
 		newNode->right = header;
 		newNode->left = temp;
-		temp->right = newNode;
+		newNode->left->right = newNode;
 		temp = newNode;
 	}
 	int ID[3] = { 0, 1, 1 };// number, row, col
@@ -112,40 +107,41 @@ void Sudoku::BuildLinkedList() {
 		for (int j = 0; j < Colcs; j++) {
 			if (sparse_matrix[i][j]) {
 				Node* newNode = new Node;
-
 				newNode->cell_ID[0] = ID[0];
 				newNode->cell_ID[1] = ID[1];
 				newNode->cell_ID[2] = ID[2];
+				
 				if (prev == NULL) {
 					prev = newNode;
 					prev->right = newNode;
 				}
-				// insert new Node between prev and prev->right
-				// prev - newNode - prev->right
+				//insert newNode between prev and prev->right
 				newNode->left = prev;
 				newNode->right = prev->right;
 				newNode->left->right = newNode;
 				newNode->right->left = newNode;
 
-				// insert newNode to top and top->up
+				// insert newNode between top and top->up
 				newNode->head = top;
 				newNode->up = top->up;
 				newNode->down = top;
-				
 				newNode->up->down = newNode;		
 				newNode->down->up = newNode;
 				top->size++;
+
 				// top->down = the first newNode, then we can iterate easily
+				// top 自下而上建立, 同時top的down 指向第一個Node 
 				if (top->down == top) {
 					top->down = newNode;
 				}
 				prev = newNode;
-				top = top->right;
 			}
+			top = top->right;
 		}
 	}
 	HeadNode = header;
 }
+
 
 void Sudoku::BuildSparseMatrix() {
 	// sparse_matrix row order, RowColNumber
@@ -176,9 +172,8 @@ void Sudoku::BuildSparseMatrix() {
 			x++;
 		}
 	}
-	count = 1;
-	x = 0;
 	// Constraint#3 each col 1 ~ 9
+	x = 0;
 	for (int j = 2 * Size_2; j < 3 * Size_2; j++) {
 		for (int i = x; i < Rowps; i += Size_2) {
 			sparse_matrix[i][j] = 1;
@@ -205,62 +200,125 @@ void Sudoku::BuildSparseMatrix() {
 		}
 	}
 }
-void Sudoku::search(int k) {
+
+bool Sudoku::test(const vector<vector<int>>& b) {
+	for (int i = 0; i < 9; i++) {
+		vector<int> a = b[i];
+		sort(a.begin(), a.end());
+		/*for (auto x : a)
+			cout << x << " "; puts("");*/
+		if (a != vector<int>{1, 2, 3, 4, 5, 6, 7, 8, 9})return 0;
+	}
+	for (int i = 0; i < 9; i++) {
+		vector<int> a;
+		for (int j = 0; j < 9; j++) {
+			a.push_back(b[j][i]);
+		}
+		sort(a.begin(), a.end());
+		/*for (auto x : a)
+			cout << x << " "; puts("");*/
+		if (a != vector<int>{1, 2, 3, 4, 5, 6, 7, 8, 9})return 0;
+	}
+	for (int x = 0; x < 9; x += 3)
+		for (int y = 0; y < 9; y += 3) {
+			vector<int> a;
+			for (int i = 0; i < 3; i++)
+				for (int j = 0; j < 3; j++) {
+					a.push_back(b[x + i][y + j]);
+
+				}
+			sort(a.begin(), a.end());
+			/*for (auto x : a)
+				cout << x << " "; puts("");*/
+			if (a != vector<int>{1, 2, 3, 4, 5, 6, 7, 8, 9})return 0;
+		}
+	return 1;
+}
+
+void Sudoku::search() {
+	if(HeadNode->right == HeadNode){ // Finish
+		if (!test(solution)) {
+			printf("Solution illegal there is some bugs!!!\n");
+			printBoard(solution);
+			system("PAUSE");
+		}
+		end_time = clock() - start_time;
+		cout << "Time Elapsed: " << (float)end_time / CLOCKS_PER_SEC << " seconds.\n\n";
+		cin.get(); // pause for multiple ans
+		printf("Sudoku:\n");
+		printBoard(solution);
+		isSolved = 1;
+		return;
+	}
+
 	// Selecting a column with a low node count is a heuristic which improves performance in some cases, but is not essential to the algorithm. Ref: wiki/Dancing_Links
-	Node* col = HeadNode->right;
-	Node* tmp = col->right;
-	while (tmp != HeadNode) {
-		if (tmp->size < col->size) {
-			col = tmp;
+	Node* ColumnHead = HeadNode->right;
+	for (Node* tmp = ColumnHead->right; tmp != HeadNode; tmp = tmp->right) {
+		if (tmp->size < ColumnHead->size) {
+			ColumnHead = tmp;
 		}
-		tmp = tmp->right;
 	}
-	coverColumn(col);
-
-	tmp = col->down; // row
-	while (tmp != col) {
-		//sol[k] = tmp;
-
-		Node* cell = tmp->right;
-		while (cell != tmp) {
-			coverColumn(cell);
-			cell = cell->right;
+	coverColumn(ColumnHead);
+	// row
+	for (Node* row = ColumnHead->down; row != ColumnHead; row = row->down) {
+		solution[row->cell_ID[1] - 1][row->cell_ID[2] - 1] = row->cell_ID[0];
+		for (Node* cell = row->right; cell != row; cell = cell->right) {
+			coverColumn(cell->head);
 		}
-		
-		search(k + 1);
-
-		/*tmp = sol[k];
-		sol[k] = NULL;*/
-		cell = tmp->left;
-		while (cell != tmp) {
-			uncoverColumn(cell);
-			cell = cell->left;
+		search();
+		for (Node* cell = row->left; cell != row; cell = cell->left) {
+			uncoverColumn(cell->head);
 		}
-
-		tmp = tmp->down;
 	}
-	uncoverColumn(col);
+	uncoverColumn(ColumnHead);
 
 }
 
+void Sudoku::readBoard(vector<vector<int>>& b) {
+	for (int i = 0; i < 9; i++)
+		for (int j = 0; j < 9; j++) {
+			cin >> b[i][j];
+		}
+}
+
+void Sudoku::printBoard(const vector<vector<int>>& b){
+	for (int i = 0; i < 9; i++)
+		for (int j = 0; j < 9; j++) {
+			cout << b[i][j] << (j == 8 ? '\n' : ' ');
+		}
+}
 
 int main() {
 	Sudoku s;
-	//s.readBoard();
-	//s.printBoard();
-	//s.BuildSparseMatrix();
-	//s.BuildLinkedList();
-	//s.InitCover();
-
+	start_time = clock();
+	s.readBoard(s.board);
+	s.BuildSparseMatrix();
+	s.BuildLinkedList();
+	s.InitCover();
+	s.search();
+	if (!s.isSolved) {
+		printf("No Solution!!!");
+	}
 }
 /*
-1 2 3 4 5 6 7 8 9
-1 2 3 4 5 6 7 8 9
-1 2 3 4 5 6 7 8 9
-1 2 3 4 5 6 7 8 9
-1 2 3 4 5 6 7 8 9
-1 2 3 4 5 6 7 8 9
-1 2 3 4 5 6 7 8 9
-1 2 3 4 5 6 7 8 9
-1 2 3 4 5 6 7 8 9
+0 4 0 6 0 0 0 0 0
+9 0 0 0 5 0 2 1 0
+0 0 1 0 8 3 0 5 0
+0 0 0 8 3 0 9 6 7
+6 8 7 0 0 0 3 2 1
+3 9 2 0 7 6 0 0 0
+0 7 0 5 9 0 8 0 0
+0 5 9 0 2 0 0 0 4
+0 0 0 0 0 7 0 9 0
+
+4 0 0 6 0 0 0 0 0
+1 0 0 0 5 0 0 0 0
+2 0 0 0 8 3 0 0 0
+0 0 0 8 3 0 9 0 0
+0 8 0 0 0 0 3 2 1
+0 0 2 0 7 6 0 0 0
+0 7 0 5 9 0 8 0 0
+0 0 9 0 2 0 0 0 0
+0 0 0 0 0 7 0 9 0
+
 */

@@ -1,20 +1,14 @@
 # To Do
-- [X] ATCoder
-- [X] Codeforces
-- [X] CSAcademy
-- [X] HackerRank
-- [X] POJ
+- [ ] suffix array w double shift
+- [ ] SA with DC3
+- [ ] LZW
 - [ ] FFT
 - [ ] Graph
 - [ ] Mo's Algorithm
 - [ ] Network Flow
-- [ ] Sudoku + DLX
 - [ ] UVa
 - [ ] ZeroJudge
-- [X] NFA + DFA
-- [ ] AC自動機
-- [ ] suffix array w double shift
-- [ ] SA with D3C
+
 
 # Hyperlinks
 

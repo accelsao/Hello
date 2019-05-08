@@ -1,11 +1,5 @@
 # TODO
-- [X] BuildSparseMatrix
-- [X] BuildLinkedList
-- [X] InitCoverColumn
-- [X] CoverColumn
-- [X] search
-- [ ] Test_Sudoku
-- [ ] Generate
+None
 
 # Reference
 [wiki](https://en.wikipedia.org/wiki/Exact_cover#Sudoku)

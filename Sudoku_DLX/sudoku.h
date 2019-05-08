@@ -30,31 +30,25 @@ class Sudoku {
 public:
 	Sudoku() {
 		board.resize(Size, vector<int>(Size));
+		solution.resize(Size, vector<int>(Size));
 		sparse_matrix.resize(Rowps, vector<bool>(Colcs));
 		HeadNode = NULL;
+		isSolved = false;
 	};
-	void readBoard() {
-		for (int i = 0; i < 9; i++)
-			for (int j = 0; j < 9; j++) {
-				cin >> board[i][j];
-			}
-	}
-	void printBoard() {
-		for (int i = 0; i < 9; i++)
-			for (int j = 0; j < 9; j++) {
-				cout << board[i][j] << (j == 8 ? '\n' : ' ');
-			}
-	}
+	
 	void BuildSparseMatrix();
-	void search(int k);
+	void search();
+	void readBoard(vector<vector<int>>& b);
+	void printBoard(const vector<vector<int>>& b);
 	void BuildLinkedList();
 	void InitCover();
 	void coverColumn(Node* col);
 	void uncoverColumn(Node* col);
-private:
+	bool isSolved;
 	vector<vector<int>> board;
+	vector<vector<int>> solution;
+	bool test(const vector<vector<int>>& b);
+private:
 	vector<vector<bool>> sparse_matrix;
 	Node* HeadNode;
-	Node* sol[1000];// check if tmp is recover correctly
-
 };
