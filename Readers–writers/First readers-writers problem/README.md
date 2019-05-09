@@ -1,0 +1,2 @@
+有增加寫入優先的mutex來保證writers不會starvation
+當writes出現的時候, 就暫時禁止readers進入 直接writers結束
