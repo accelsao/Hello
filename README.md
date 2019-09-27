@@ -1,14 +1,13 @@
 # To Do
-- [ ] suffix array w double shift
-- [ ] SA with DC3
-- [ ] LZW
+- [ ] double shift LCA
+- [ ] RMQ
+- [ ] AC自動機
+- [ ] KMP
+- [ ] 矩陣快速冪
+- [ ] Suffix Array
 - [ ] FFT
-- [ ] Graph
-- [ ] Mo's Algorithm
-- [ ] Network Flow
-- [ ] UVa
-- [ ] ZeroJudge
-
+- [ ] 主席樹
+- [ ] max flow min cut
 
 # Hyperlinks
 
