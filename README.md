@@ -1,15 +1,13 @@
 # To Do
-- [ ] double shift LCA
-- [ ] RMQ
-- [ ] AC自動機
-- [ ] KMP
-- [ ] 矩陣快速冪
-- [ ] Suffix Array
-- [ ] FFT
-- [ ] 主席樹
-- [ ] max flow min cut
+
+- [ ] suffix array
+- [ ] math
+- [ ] geometry
+- [ ] fft
 
 # Hyperlinks
+
+[tutorials in CF](https://codeforces.com/blog/entry/57282)
 
 [Game Theory, Second Edition, 2014](https://www.math.ucla.edu/~tom/Game_Theory/Contents.html)
 
