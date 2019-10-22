@@ -1,5 +1,6 @@
 # To Do
 
+- [ ] Point structure
 - [ ] suffix array
 - [ ] math
 - [ ] geometry
