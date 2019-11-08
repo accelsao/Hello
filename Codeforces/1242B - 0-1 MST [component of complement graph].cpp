@@ -28,34 +28,94 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define DEBUG
-#define RE(a,b) memset(a,b,sizeof a)
 #define F first
 #define S second
-#define SZ(x) ((int)(x.size()))
-#define PB push_back
-#define ALL(X) (X).begin(), (X).end()
 using ll = long long;
-using ld = long double;
 using ull = unsigned long long;
 using pii = pair<int,int>;
-using C = complex<double>;
-const double PI = 3.14159265;
-const double eps = 1e-8;
 const int N = 1e6 +10;
 const int M = 1e9 + 7;
 const int inf = 1e9+7;
 const ll INF = 1e18;
-ll pw(ll a, ll b){ll t=1;a%=M;for(;b;b>>=1){if(b&1){t=t*a%M;}a=a*a%M;}return t;}
-ll gcd(ll a, ll b){return b?gcd(b, a%b): a;}
+
+int n, m;
+set<int> g[N];
 
 int main(){
 	ios::sync_with_stdio(0),cin.tie(0),cout.tie(0);
+	cin>>n>>m;
+	int u, v;
+	for(int i=0;i<m;i++){
+		cin>>u>>v;
+		g[u].insert(v);
+		g[v].insert(u);
+	}
+	set<int> s;
+	for(int i=1;i<=n;i++)
+		s.insert(s.end(), i);
+	int ans=0;
+	
+	while(s.size()){
+		ans++;
+		queue<int> q;
+		q.push(*s.begin());
+		s.erase(s.begin());
+		while(q.size()){
+			int u=q.front();q.pop();
+			auto it=s.begin();
+			while(it!=s.end()){
+				if(g[u].find(*it)==g[u].end()){
+					q.push(*it);
+					it = s.erase(it);
+				}
+				else{
+					it++;
+				}
+			}
+		}
+	}
+	printf("%d\n", ans-1);
+	
+	
+	
+//	set<int> s;
+//	for(int i=1;i<=n;i++){
+//		p[i]=i;
+//		R[i]=1;
+//	}
+//	for(int i=1;i<=n;i++){
+//		for(const int& j:g[i]){
+//			a[find(j)]++;
+//		}
+//		for(auto it=s.begin();it!=s.end();){
+//			if(R[*it]>a[*it]){
+//				R[i]+=R[*it];
+//				R[*it]=0;
+//				p[*it]=i;
+//				
+//				a[*it]=0;
+//				it=s.erase(it);
+//			}
+//			else{
+//				it++;
+//			}
+//		}
+//
+//		s.insert(s.end(), i);
+////		for(const auto& x:s)
+////			printf("%d ",x);puts("");
+//	}
+//	printf("%d\n", s.size()-1);
+////	int ans=0;
+////	for(int i=1;i<=n;i++)
+////		if(find(i)==i){
+////			ans++;
+////		}
+////	printf("%d\n", ans-1);
+////	cout<<ans-1<<"\n";
+//	
 }
 
-/*
-#ifdef DEBUG
-	cout<<"I Love Co shu Nie [ https://coshunie.com/ ]"
-#endif
-*/
+
 
 
