@@ -1,30 +1,30 @@
-// ¢i¢i¢iùşùşùşùşùşùşùşùşùşùáùáùáùáùáùáùáùáùáùáùáùáùáùáùáùáùáùşùşùşùáùáùáùáùáùáùş¢i
-// ¢i¢i¢iùş¢i¢i¢i¢i¢i¢i¢iùşùşùáùáùáùáùáùáùáùáùáùáùáùáùş¢i¢i¢iùşùşùşùş¢iùşùáùáùáùş¢i
-// ¢i¢i¢i¢i¢i¢i¢iùş¢i¢i¢i¢i¢iùşùşùáùáùáùáùáùáùáùáùş¢i¢i¢iùşùáùáùáùáùáùáùáùşùáùáùş¢i
-// ¢i¢i¢i¢iùşùşùşùşùáùáùş¢i¢i¢i¢i¢iùáùáùáùáùáùá¢i¢i¢iùşùáùáùáùáùáùáùáùáùáùáùáùáùá¢i
-// ¢i¢i¢iùşùşùşùşùáùáùáùáùáùáùş¢i¢iùáùáùáùáùáùáùşùşùáùáùáùáùáùáùáùáùáùáùáùáùáùáùş¢i
-// ¢i¢i¢i¢iùşùşùşùáùáùáùáùáùáùáùş¢iùşùáùáùáùáùáùáùáùáùáùáùáùáùáùáùáùáùáùáùáùáùáùş¢i
-// ¢i¢i¢iùş¢iùş¢i¢i¢i¢i¢i¢i¢iùşùş¢i¢i¢iùşùáùáùáùáùáùáùş¢i¢i¢i¢i¢i¢i¢iùşùáùáùáùáùş¢i
-// ¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢iùş¢iùşùáùáùáùáùáùşùşùşùşùşùşùşùşùáùáùáùáùáùáùá¢i
-// ¢i¢i¢iùşùşùşùşùşùşùşùáùáùşùşùşùşùş¢iùşùáùáùáùáùáùáùáùáùáùáùáùáùáùáùáùáùáùáùáùş¢i
-// ¢i¢i¢i¢iùşùşùşùáùáùáùáùşùşùşùşùşùş¢iùşùáùáùáùáùáùáùáùáùáùáùáùáùáùáùáùáùáùáùáùş¢i
-// ¢i¢i¢iùş¢iùşùşùşùşùşùşùşùşùşùşùşùşùşùşùáùáùáùáùáùáùáùáùáùáùáùáùáùáùáùáùáùáùáùş¢i
-// ¢i¢i¢i¢i¢iùşùşùşùşùşùşùşùş¢iùşùşùş¢iùşùáùáùáùáùáùáùáùáùáùáùáùáùáùáùáùáùáùáùáùş¢i
-// ¢i¢i¢i¢i¢iùşùşùşùşùşùşùş¢i¢iùşùşùş¢iùşùáùáùáùáùáùáùáùáùáùáùáùáùáùáùáùáùáùáùá¢i¢i
-// ¢i¢i¢i¢i¢iùşùşùşùşùş¢i¢i¢i¢iùşùşùş¢iùşùáùáùáùáùáùáùáùáùáùáùáùáùáùáùáùáùáùáùá¢i¢i
-// ¢i¢i¢i¢iùş¢iùşùşùşùş¢i¢iùşùşùşùş¢i¢iùáùáùáùáùáùáùáùáùáùáùáùáùáùáùáùáùáùáùáùá¢i¢i
-// ¢i¢i¢i¢iùşùş¢i¢i¢iùşùşùşùşùşùşùş¢i¢iùşùáùáùáùáùáùáùáùáùáùáùáùá¢iùşùáùşùáùáùş¢i¢i
-// ¢i¢i¢i¢i¢iùş¢i¢i¢iùşùşùşùşùşùşùşùş¢i¢i¢i¢iùşùşùáùáùáùáùáùáùá¢iùşùáùáùáùáùáùş¢i¢i
-// ¢i¢i¢i¢i¢iùşùş¢iùş¢i¢i¢iùşùşùş¢i¢i¢i¢iùáùş¢iùşùşùáùáùáùşùş¢iùşùáùáùáùáùáùá¢i¢i¢i
-// ¢i¢i¢i¢i¢i¢iùş¢i¢iùş¢i¢i¢i¢i¢i¢i¢iùşùáùáùáùşùşùáùşùş¢i¢iùşùáùáùáùáùáùáùáùş¢i¢i¢i
-// ¢i¢i¢i¢i¢i¢i¢iùş¢i¢iùşùşùşùşùşùşùşùşùşùşùşùşùşùşùşùáùáùáùáùáùáùáùáùáùáùá¢i¢i¢i¢i
-// ¢i¢i¢i¢i¢i¢i¢iùşùş¢i¢iùşùşùşùşùşùáùáùáùáùáùáùáùáùáùáùáùáùáùáùáùáùáùáùáùş¢i¢i¢i¢i
-// ¢i¢i¢i¢i¢i¢i¢i¢iùşùşùş¢i¢i¢i¢i¢iùşùşùáùáùáùáùáùáùáùáùáùáùáùáùáùáùáùáùş¢i¢i¢i¢i¢i
-// ¢i¢i¢i¢i¢i¢i¢i¢i¢iùşùşùş¢iùşùşùşùşùş¢i¢i¢iùşùáùáùáùáùáùáùáùáùáùáùáùş¢i¢i¢i¢i¢i¢i
-// ¢i¢i¢i¢i¢i¢i¢i¢i¢i¢iùşùşùş¢iùşùşùşùáùş¢i¢iùáùáùáùáùáùáùáùáùáùáùáùş¢i¢i¢i¢i¢i¢i¢i
-// ¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢iùşùş¢iùşùşùşùş¢i¢i¢iùşùáùáùáùáùáùáùáùáùáùş¢i¢i¢i¢i¢i¢i¢i¢i
-// ¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢iùşùşùş¢i¢i¢iùşùşùáùáùáùáùáùáùáùá¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i
-// ¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢iùşùşùş¢i¢iùşùşùáùáùáùáùáùáùş¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i
+// ¢Fi¢Fi¢Fiutututututututututuauauauauauauauauauauauauauauauauautututuauauauauauaut¢Fi
+// ¢Fi¢Fi¢Fiut¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi¢Fiututuauauauauauauauauauauauaut¢Fi¢Fi¢Fiutututut¢Fiutuauauaut¢Fi
+// ¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi¢Fiut¢Fi¢Fi¢Fi¢Fi¢Fiututuauauauauauauauaut¢Fi¢Fi¢Fiutuauauauauauauautuauaut¢Fi
+// ¢Fi¢Fi¢Fi¢Fiututututuauaut¢Fi¢Fi¢Fi¢Fi¢Fiuauauauauaua¢Fi¢Fi¢Fiutuauauauauauauauauauauauaua¢Fi
+// ¢Fi¢Fi¢Fiututututuauauauauauaut¢Fi¢Fiuauauauauauaututuauauauauauauauauauauauauauaut¢Fi
+// ¢Fi¢Fi¢Fi¢Fiutututuauauauauauauaut¢Fiutuauauauauauauauauauauauauauauauauauauauauaut¢Fi
+// ¢Fi¢Fi¢Fiut¢Fiut¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi¢Fiutut¢Fi¢Fi¢Fiutuauauauauauaut¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi¢Fiutuauauauaut¢Fi
+// ¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi¢Fiut¢Fiutuauauauauaututututututututuauauauauauaua¢Fi
+// ¢Fi¢Fi¢Fiutututututututuauaututututut¢Fiutuauauauauauauauauauauauauauauauauauauaut¢Fi
+// ¢Fi¢Fi¢Fi¢Fiutututuauauauautututututut¢Fiutuauauauauauauauauauauauauauauauauauauaut¢Fi
+// ¢Fi¢Fi¢Fiut¢Fiututututututututututututututuauauauauauauauauauauauauauauauauauauaut¢Fi
+// ¢Fi¢Fi¢Fi¢Fi¢Fiutututututututut¢Fiututut¢Fiutuauauauauauauauauauauauauauauauauauauaut¢Fi
+// ¢Fi¢Fi¢Fi¢Fi¢Fiututututututut¢Fi¢Fiututut¢Fiutuauauauauauauauauauauauauauauauauauaua¢Fi¢Fi
+// ¢Fi¢Fi¢Fi¢Fi¢Fiututututut¢Fi¢Fi¢Fi¢Fiututut¢Fiutuauauauauauauauauauauauauauauauauauaua¢Fi¢Fi
+// ¢Fi¢Fi¢Fi¢Fiut¢Fiutututut¢Fi¢Fiutututut¢Fi¢Fiuauauauauauauauauauauauauauauauauauauaua¢Fi¢Fi
+// ¢Fi¢Fi¢Fi¢Fiutut¢Fi¢Fi¢Fiututututututut¢Fi¢Fiutuauauauauauauauauauauaua¢Fiutuautuauaut¢Fi¢Fi
+// ¢Fi¢Fi¢Fi¢Fi¢Fiut¢Fi¢Fi¢Fiutututututututut¢Fi¢Fi¢Fi¢Fiututuauauauauauaua¢Fiutuauauauauaut¢Fi¢Fi
+// ¢Fi¢Fi¢Fi¢Fi¢Fiutut¢Fiut¢Fi¢Fi¢Fiututut¢Fi¢Fi¢Fi¢Fiuaut¢Fiututuauauautut¢Fiutuauauauauaua¢Fi¢Fi¢Fi
+// ¢Fi¢Fi¢Fi¢Fi¢Fi¢Fiut¢Fi¢Fiut¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi¢Fiutuauauaututuautut¢Fi¢Fiutuauauauauauauaut¢Fi¢Fi¢Fi
+// ¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi¢Fiut¢Fi¢Fiutututututututututututututututuauauauauauauauauauaua¢Fi¢Fi¢Fi¢Fi
+// ¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi¢Fiutut¢Fi¢Fiutututututuauauauauauauauauauauauauauauauauauauaut¢Fi¢Fi¢Fi¢Fi
+// ¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi¢Fiututut¢Fi¢Fi¢Fi¢Fi¢Fiututuauauauauauauauauauauauauauauauaut¢Fi¢Fi¢Fi¢Fi¢Fi
+// ¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi¢Fiututut¢Fiututututut¢Fi¢Fi¢Fiutuauauauauauauauauauauaut¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi
+// ¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi¢Fiututut¢Fiutututuaut¢Fi¢Fiuauauauauauauauauauauaut¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi
+// ¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi¢Fiutut¢Fiutututut¢Fi¢Fi¢Fiutuauauauauauauauauaut¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi
+// ¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi¢Fiututut¢Fi¢Fi¢Fiututuauauauauauauaua¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi
+// ¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi¢Fiututut¢Fi¢Fiututuauauauauauaut¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi¢Fi
 #include <bits/stdc++.h>
 using namespace std;
 //#define DEBUG
@@ -118,6 +118,3 @@ int main(){
 	cout<<"I Love Co shu Nie [ https://coshunie.com/ ]"
 #endif
 */
-
-
-
