@@ -1,8 +1,8 @@
-int main(){
-for(int i = 0; i < 10 ; i ++) // need 1 tab
-{ // need 1 tab
-for(int j = 0 ; j <= i ; j ++) // need 2 tab
-printf(“*”); // need 2 tab
-printf(“\n”); // need 2 tab
-} // need 1 tab
-} // need 0 tab
+0X00F3
+0XFF 
+ 0xfff
+0x12345678f
+0x12345
+   0x1   
+  0x 12
+

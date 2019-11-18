@@ -1,3 +1,16 @@
 flex -o lex.yy.c parentheses_count.l
 gcc -o parentheses_count lex.yy.c -lfl
 ./parentheses_count < input.txt
+
+flex -o lex.yy.c findhex.l
+gcc -o findhex lex.yy.c -lfl
+./findhex < input.txt > output.txt
+
+sudo mount -t vboxsf domjudge /home/user/Desktop/domjudge
+
+
+flex -o lex.yy.c remove_duplicate.l
+g++ -o remove_duplicate lex.yy.c -lfl
+./remove_duplicate < input.txt > output.txt
+
+
