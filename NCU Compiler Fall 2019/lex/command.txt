@@ -1,0 +1,3 @@
+flex -o lex.yy.c parentheses_count.l
+gcc -o parentheses_count lex.yy.c -lfl
+./parentheses_count < input.txt

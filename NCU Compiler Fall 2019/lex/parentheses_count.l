@@ -1,38 +1,27 @@
 %{
 int cnt=0;
-int ls=0;
 %}
+
+line ^[^\n]*$
 
 %%
 
-[{] {
-	while(ls){
+{line} {
+	int i;
+	for(i=0;i<cnt;i++){
 		printf("\t");
-		ls--;
 	}
-	printf("%s", yytext);
-	cnt++;
-}
-[}] {
-	ls--;
-	cnt--;
-	while(ls){
-		printf("\t");
-		ls--;
+	for(i=0;i<yyleng;i++){
+		if(yytext[i]!='\t'){
+			printf("%c", yytext[i]);
+		}
+		else if(yytext[i]=='{'){
+			cnt++;
+		}
+		else if(yytext[i]=='}'){
+			cnt--;
+		}
 	}
-	printf("%s", yytext);
-}
-. {
-	while(ls){
-		printf("\t");
-		ls--;
-	}
-	printf("%s", yytext);
-}
-
-\n {
-	ls=cnt;
-	printf("%s", yytext);
 }
 
 %%
