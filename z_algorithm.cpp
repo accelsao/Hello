@@ -13,4 +13,3 @@ vector<int>z_f(const string &s){
 	}
 	return z;
 }
-

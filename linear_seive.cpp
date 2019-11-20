@@ -18,4 +18,3 @@ void seive(int n){
 		}
 	}
 }
-

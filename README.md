@@ -1,10 +1,10 @@
 # To Do
 
-- [ ] Point structure
-- [ ] suffix array
-- [ ] math
-- [ ] geometry
-- [ ] fft
+- [ ] 中國剩餘定理
+- [X] Kuhn-Munkres Algorithm
+- [ ] blossom algorithm
+- [ ] maxflow-mincut
+- [X] dinic
 
 # Hyperlinks
 
