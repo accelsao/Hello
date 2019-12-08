@@ -1,12 +1,41 @@
 # To Do
 
-- [ ] 中國剩餘定理
-- [X] Kuhn-Munkres Algorithm
-- [ ] blossom algorithm
-- [ ] maxflow-mincut
-- [X] dinic
+## data structures
+- [X] basic segtree
+- [ ] segtree with lazy propagation
+- [ ] zkw segtree
+- [ ] sparse table
+- [ ] persistent segtree
+- [ ] mo's algorithm
 
-# Hyperlinks
+## graphs
+- [X] tarjan
+- [ ] 2-sat
+
+## flows
+- [ ] blossom
+- [X] dinic
+- [X] km
+- [ ] mcmf
+
+## maths
+- [ ] crt
+- [ ] exgcd
+- [ ] hash
+- [X] linear sieve
+- [X] mint
+
+## string
+- [X] kmp
+- [X] z
+- [ ] suffix array
+
+
+# Links
+
+[the-tourist/algo](https://github.com/the-tourist/algo)
+
+[edisonhello/waynedisonitau123](https://github.com/edisonhello/waynedisonitau123)
 
 [tutorials in CF](https://codeforces.com/blog/entry/57282)
 
