@@ -1,9 +1,9 @@
 @echo off  
 :loop  
     data.exe %random% > data.in
-    std.exe < data.in > std.out
-    bob.exe < data.in > bob.out
-    fc std.out bob.out 
+    participant.exe < data.in > participant.out
+    jury.exe < data.in > jury.out
+    fc jury.out participant.out 
 if not errorlevel 1 goto loop  
 pause
 goto loop
