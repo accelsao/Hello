@@ -2,9 +2,11 @@
 
 ## data structures
 - [X] basic segtree
+- [X] fenwick
+- [ ] fenwick2D
 - [ ] segtree with lazy propagation
 - [ ] zkw segtree
-- [ ] sparse table
+- [X] sparsetable
 - [ ] persistent segtree
 - [ ] mo's algorithm
 
@@ -30,6 +32,8 @@
 - [X] z
 - [ ] suffix array
 
+## geometry
+- [ ] closest pair
 
 # Links
 
