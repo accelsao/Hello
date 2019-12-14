@@ -45,8 +45,8 @@ extern int yydebug;
 # define YYTOKENTYPE
   enum yytokentype
   {
-    INUMBER = 258,
-    WORD = 259
+    FNUMBER = 258,
+    UMINUS = 259
   };
 #endif
 
@@ -55,12 +55,11 @@ extern int yydebug;
 typedef union YYSTYPE YYSTYPE;
 union YYSTYPE
 {
-#line 6 "print.y" /* yacc.c:1909  */
+#line 7 "calculator.y" /* yacc.c:1909  */
 
-int ival;
-char* word;
+	float fval;
 
-#line 64 "y.tab.h" /* yacc.c:1909  */
+#line 63 "y.tab.h" /* yacc.c:1909  */
 };
 # define YYSTYPE_IS_TRIVIAL 1
 # define YYSTYPE_IS_DECLARED 1
