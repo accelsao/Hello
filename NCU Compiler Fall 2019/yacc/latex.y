@@ -13,7 +13,6 @@
 %token FRAC
 %left '+' '-'
 %right '^'
-%nonassoc FRACS
 
 %%
 
@@ -28,7 +27,7 @@ expr : expr '+' expr { $$ = $1 + $3; }
 	 | expr '-' expr { $$ = $1 - $3; }
 	 | expr '^' expr { $$ = pow($1, $3); }
 	 | expr '^' '{' expr '}' { $$ = pow($1, $4); }
-	 | FRAC '{' expr '}' '{' expr '}' %prec FRACS { $$ = $3 / $6; }
+	 | FRAC '{' expr '}' '{' expr '}' { $$ = $3 / $6; }
 	 | NUM
 	 ;
 
