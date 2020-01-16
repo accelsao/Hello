@@ -435,7 +435,7 @@ Our grading scripts will rerun the checker code allowing us to verify your score
 - [X] Part 1: CUDA Warm-Up 1: SAXPY (5 pts)
 - [ ] Part 2: CUDA Warm-Up 2: Parallel Prefix-Sum (10 pts)
 	- [X] Exclusive Prefix Sum
-	- [X] Find Repeats
+	- [ ] Find Repeats
 - [ ] Part 3: A Simple Circle Renderer (85 pts)
 
 
