@@ -181,6 +181,9 @@ int main(int argc, char** argv) {
 	
     } else if (test.compare("find_repeats") == 0) { // Test find_repeats
         
+		
+
+		
         // run CUDA implementation
         int cu_size;
         for (int i=0; i<3; i++) {
