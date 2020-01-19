@@ -324,7 +324,7 @@ shadePixel(int circleIndex, float2 pixelCenter, float3 p, float4* imagePtr) {
     float diffY = p.y - pixelCenter.y;
     float pixelDist = diffX * diffX + diffY * diffY;
 
-    float rad = cuConstRendererParams.radius[circleIndex];;
+    float rad = cuConstRendererParams.radius[circleIndex];
     float maxDist = rad * rad;
 
     // circle does not contribute to the image
@@ -363,6 +363,16 @@ shadePixel(int circleIndex, float2 pixelCenter, float3 p, float4* imagePtr) {
 
     float oneMinusAlpha = 1.f - alpha;
 
+//    // BEGIN SHOULD-BE-ATOMIC REGION
+//    
+//	atomicExch(&imagePtr->x, alpha * rgb.x + oneMinusAlpha * imagePtr->x);
+//    atomicExch(&imagePtr->y, alpha * rgb.y + oneMinusAlpha * imagePtr->y);
+//    atomicExch(&imagePtr->z, alpha * rgb.z + oneMinusAlpha * imagePtr->z);
+//    atomicExch(&imagePtr->w, alpha * imagePtr->w);
+//
+//    // END SHOULD-BE-ATOMIC REGION
+    
+    
     // BEGIN SHOULD-BE-ATOMIC REGION
     // global memory read
 
@@ -386,45 +396,57 @@ shadePixel(int circleIndex, float2 pixelCenter, float3 p, float4* imagePtr) {
 // resulting image will be incorrect.
 __global__ void kernelRenderCircles() {
 
-    int index = blockIdx.x * blockDim.x + threadIdx.x;
+    int idx_x = blockIdx.x * blockDim.x + threadIdx.x;
+    int idx_y = blockIdx.y * blockDim.y + threadIdx.y;	
 
-    if (index >= cuConstRendererParams.numCircles)
-        return;
-
-    int index3 = 3 * index;
-
-    // read position and radius
-    float3 p = *(float3*)(&cuConstRendererParams.position[index3]);
-    float  rad = cuConstRendererParams.radius[index];
-
-    // compute the bounding box of the circle. The bound is in integer
-    // screen coordinates, so it's clamped to the edges of the screen.
     short imageWidth = cuConstRendererParams.imageWidth;
     short imageHeight = cuConstRendererParams.imageHeight;
-    short minX = static_cast<short>(imageWidth * (p.x - rad));
-    short maxX = static_cast<short>(imageWidth * (p.x + rad)) + 1;
-    short minY = static_cast<short>(imageHeight * (p.y - rad));
-    short maxY = static_cast<short>(imageHeight * (p.y + rad)) + 1;
 
-    // a bunch of clamps.  Is there a CUDA built-in for this?
-    short screenMinX = (minX > 0) ? ((minX < imageWidth) ? minX : imageWidth) : 0;
-    short screenMaxX = (maxX > 0) ? ((maxX < imageWidth) ? maxX : imageWidth) : 0;
-    short screenMinY = (minY > 0) ? ((minY < imageHeight) ? minY : imageHeight) : 0;
-    short screenMaxY = (maxY > 0) ? ((maxY < imageHeight) ? maxY : imageHeight) : 0;
-
-    float invWidth = 1.f / imageWidth;
+	
+	float invWidth = 1.f / imageWidth;
     float invHeight = 1.f / imageHeight;
+	float2 pixelCenter = make_float2(invWidth * (static_cast<float>(idx_x) + 0.5f),
+										 invHeight * (static_cast<float>(idx_y) + 0.5f));
 
-    // for all pixels in the bonding box
-    for (int pixelY=screenMinY; pixelY<screenMaxY; pixelY++) {
-        float4* imgPtr = (float4*)(&cuConstRendererParams.imageData[4 * (pixelY * imageWidth + screenMinX)]);
-        for (int pixelX=screenMinX; pixelX<screenMaxX; pixelX++) {
-            float2 pixelCenterNorm = make_float2(invWidth * (static_cast<float>(pixelX) + 0.5f),
-                                                 invHeight * (static_cast<float>(pixelY) + 0.5f));
-            shadePixel(index, pixelCenterNorm, p, imgPtr);
-            imgPtr++;
-        }
+    for(int i=0; i<cuConstRendererParams.numCircles; i++){
+        int j = 3 * i;
+        float3   p = *(float3*)(&cuConstRendererParams.position[j]);
+        float  rad = cuConstRendererParams.radius[i];
+        
+
+		
+		float4* imgPtr = (float4*)(&cuConstRendererParams.imageData[4 * (idx_y * imageWidth + idx_x)]);
+		
+		float diffX = p.x - pixelCenter.x;
+		float diffY = p.y - pixelCenter.y;
+		float pixelDist = diffX * diffX + diffY * diffY;
+		float maxDist = rad * rad;
+		float3 rgb;
+		float alpha;
+		if (pixelDist <= maxDist){
+			rgb = *(float3*)&(cuConstRendererParams.color[j]);
+			alpha = .5f;
+			float oneMinusAlpha = 1.f - alpha;
+
+			// BEGIN SHOULD-BE-ATOMIC REGION
+			// global memory read
+
+			float4 existingColor = *imgPtr;
+			float4 newColor;
+			newColor.x = alpha * rgb.x + oneMinusAlpha * existingColor.x;
+			newColor.y = alpha * rgb.y + oneMinusAlpha * existingColor.y;
+			newColor.z = alpha * rgb.z + oneMinusAlpha * existingColor.z;
+			newColor.w = alpha + existingColor.w;
+
+			// global memory write
+			*imgPtr = newColor;
+
+			// END SHOULD-BE-ATOMIC REGION
+		}
+		
+		
     }
+
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////
@@ -637,8 +659,13 @@ void
 CudaRenderer::render() {
 
     // 256 threads per block is a healthy number
-    dim3 blockDim(256, 1);
-    dim3 gridDim((numCircles + blockDim.x - 1) / blockDim.x);
+    // dim3 blockDim(128, 2);
+    // dim3 gridDim((numCircles + blockDim.x - 1) / blockDim.x);
+	
+	dim3 blockDim(16, 16, 1);
+	dim3 gridDim(
+        (image->width + blockDim.x - 1) / blockDim.x,
+        (image->height + blockDim.y - 1) / blockDim.y);
 
     kernelRenderCircles<<<gridDim, blockDim>>>();
     cudaDeviceSynchronize();
