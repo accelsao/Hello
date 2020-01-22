@@ -18,6 +18,8 @@ void reference_bfs_bottom_up(Graph graph, solution* sol);
 void reference_bfs_top_down(Graph graph, solution* sol);
 void reference_bfs_hybrid(Graph graph, solution* sol);
 
+using namespace std;
+
 int main(int argc, char** argv) {
 
     int  num_threads = -1;

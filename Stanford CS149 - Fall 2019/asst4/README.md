@@ -178,3 +178,14 @@ Please submit your work using Gradescope.
 2. __Please submit your code under the folder `code`.__  Just submit your full assignment 4 source tree. To keep submission sizes small, please do a `make clean` in the program directories prior to creating the archive, and remove any residual output, etc. Before submitting the source files, make sure that all code is compilable and runnable! We should be able to simply make, then execute your programs in the `/bfs` the `/pagerank` directories without manual intervention. 
 
 Our grading scripts will rerun the checker code allowing us to verify your score matches what you submitted in the `writeup.pdf`.  We might also try to run your code on other datasets to further examine its correctness.
+
+
+# TODO
+- [X] PageRank
+- [X] Parallel Breadth-First Search Top Down
+- [ ] Parallel Breadth-First Search Bottom Up
+- [ ] Parallel Breadth-First Search Hybrid
+
+
+# Ref
+* https://github.com/seahyinghang8/asst3
