@@ -30,12 +30,15 @@
 ## string
 - [X] kmp
 - [X] z
-- [ ] suffix array
+- [X] suffix array
 
 ## geometry
 - [ ] closest pair
 
-# Links
+## miscellaneous
+- [ ] debug
+
+# Reference
 
 [the-tourist/algo](https://github.com/the-tourist/algo)
 
