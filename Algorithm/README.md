@@ -11,11 +11,14 @@
 - [ ] mo's algorithm
 
 ## graphs
+- [X] graph
+- [ ] kosaraju
 - [X] tarjan
-- [ ] 2-sat
+- [ ] two-sat
+
 
 ## flows
-- [ ] blossom
+- [X] blossom
 - [X] dinic
 - [X] km
 - [ ] mcmf
@@ -28,15 +31,18 @@
 - [X] mint
 
 ## string
+- [ ] aho–corasick
 - [X] kmp
-- [X] z
+- [ ] manacher
 - [X] suffix array
+- [X] z
 
 ## geometry
 - [ ] closest pair
+- [ ] geometry lib
 
 ## miscellaneous
-- [ ] debug
+- [X] debug
 
 # Reference
 
