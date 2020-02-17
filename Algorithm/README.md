@@ -33,7 +33,7 @@
 ## string
 - [ ] aho–corasick
 - [X] kmp
-- [ ] manacher
+- [X] manacher
 - [X] suffix array
 - [X] z
 

@@ -49,7 +49,7 @@ ll pw(ll a, ll b){ll t=1;a%=M;for(;b;b>>=1){if(b&1){t=t*a%M;}a=a*a%M;}return t;}
 ll gcd(ll a, ll b){return b?gcd(b, a%b): a;}
 
 int main(){
-	ios::sync_with_stdio(0),cin.tie(0),cout.tie(0);
+	ios::sync_with_stdio(0),cin.tie(0);
 }
 
 /*
