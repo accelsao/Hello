@@ -85,11 +85,11 @@ public:
 template <typename T>
 vector<int> find_max_unweighted_matching(const undirectedgraph<T>& g) {
   std::mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
-  vector<int> match(g.n, -1);
-  vector<int> aux(g.n, -1);
-  vector<int> label(g.n);
-  vector<int> orig(g.n);
-  vector<int> parent(g.n, -1);
+  vector<int> match(g.n, -1); // 匹配
+  vector<int> aux(g.n, -1);   // 時間戳記
+  vector<int> label(g.n);     // "o" or "i"
+  vector<int> orig(g.n);      // 花根
+  vector<int> parent(g.n, -1);// 父節點
   queue<int> q;
   int aux_time = -1;
 
@@ -97,14 +97,14 @@ vector<int> find_max_unweighted_matching(const undirectedgraph<T>& g) {
     aux_time++;
     while(true) {
       if(v != -1) {
-        if (aux[v] == aux_time) {
+        if (aux[v] == aux_time) { //找到拜訪過的點 也就是LCA
           return v;
         }
         aux[v] = aux_time;
         if(match[v] == -1) {
           v = -1;
         } else {
-          v = orig[parent[match[v]]];
+          v = orig[parent[match[v]]]; //以匹配點的父節點繼續尋找
         }
       }
       swap(v, u);
@@ -115,11 +115,11 @@ vector<int> find_max_unweighted_matching(const undirectedgraph<T>& g) {
     while(orig[v] != a) {
       parent[v] = u;
       u = match[v];
-      if(label[u] == 1) {
+      if(label[u] == 1) {     // 初始點設為"o" 找增廣路
         label[u] = 0;
         q.push(u);
       }
-      orig[v] = orig[u] = a;
+      orig[v] = orig[u] = a;  // 縮花
       v = parent[u];
     }
   }; //blossom
@@ -141,6 +141,7 @@ vector<int> find_max_unweighted_matching(const undirectedgraph<T>& g) {
       q.pop();
     }
     q.push(root);
+    // 初始點設為 "o", 這裡以"0"代替"o", "1"代替"i"
     label[root] = 0;
     while(!q.empty()) {
       int v = q.front();
@@ -148,18 +149,20 @@ vector<int> find_max_unweighted_matching(const undirectedgraph<T>& g) {
       for(int id : g.g[v]) {
         auto &e = g.edges[id];
         int u = e.from ^ e.to ^ v;
-        if(label[u] == -1) {
-          label[u] = 1;
+        if(label[u] == -1) { //找到未拜訪點
+          label[u] = 1; // 標記 "i"
           parent[u] = v;
-          if(match[u] == -1) {
-            augment(u);
+          if(match[u] == -1) { //找到未匹配點
+            augment(u); // 尋找增廣路徑
             return true;
           }
+          // 找到已匹配點 將與她匹配的點丟入queue 延伸交錯樹
           label[match[u]] = 0;
           q.push(match[u]);
           continue;
-        } if(label[u] == 0 && orig[v] != orig[u]){
+        } else if(label[u] == 0 && orig[v] != orig[u]){ //找到已拜訪點 且標記同為"o" 代表找到"花"
             int a = lca(orig[v], orig[u]);
+            // 找LCA 然後縮花
             blossom(u, v, a);
             blossom(v, u, a);
         }
@@ -168,13 +171,13 @@ vector<int> find_max_unweighted_matching(const undirectedgraph<T>& g) {
     return false;
   }; //bfs
 
-
-
-
   auto greedy = [&]() {
     vector<int> order(g.n);
+    // 隨機打亂 order
     iota(order.begin(), order.end(), 0);
     shuffle(order.begin(), order.end(), rng);
+
+    // 將可以匹配的點匹配
     for(int i : order) {
       if(match[i] == -1) {
         for(auto id : g.g[i]) {
@@ -190,7 +193,9 @@ vector<int> find_max_unweighted_matching(const undirectedgraph<T>& g) {
     }
   }; // greedy
 
+  // 一開始先隨機匹配
   greedy();
+  // 對未匹配點找增廣路
   for (int i = 0; i < g.n; i++) {
     if (match[i] == -1) {
       bfs(i);

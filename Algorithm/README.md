@@ -1,4 +1,4 @@
-# To Do
+# TODO
 
 ## data structures
 - [X] basic segtree
@@ -9,6 +9,7 @@
 - [X] sparsetable
 - [ ] persistent segtree
 - [ ] mo's algorithm
+- [X] wavelet tree
 
 ## graphs
 - [X] graph
