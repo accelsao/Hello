@@ -21,7 +21,7 @@
 ## flows
 - [X] blossom
 - [X] dinic
-- [X] km
+- [X] hungarian
 - [ ] mcmf
 
 ## maths

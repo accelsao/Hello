@@ -54,7 +54,7 @@ struct WaveletTree {
     T lo, hi; // range of value
     vector<bool> B;
     vector<size_t> Bc;
-    WaveletNode *left, *right;
+    unique_ptr<WaveletNode> left, right;
 
     template <typename Iterator>
     WaveletNode(Iterator first, Iterator last, T _lo, T _hi) :
@@ -72,10 +72,11 @@ struct WaveletTree {
 
       if(lo < hi) {
         auto pivot = stable_partition(first, last, [mid](T x) { return x <= mid; });
-        left = (first == pivot) ? nullptr : new WaveletNode(first, pivot, lo, mid);
-        right = (pivot == last) ? nullptr : new WaveletNode(pivot, last, mid + 1, hi);
+        left = (first == pivot) ? nullptr : make_unique<WaveletNode> (first, pivot, lo, mid);
+        right = (pivot == last) ? nullptr : make_unique<WaveletNode> (pivot, last, mid + 1, hi);
       } else {
-        left = right = nullptr;
+        left = nullptr;
+        right = nullptr;
       }
     }
     // return count of 0 in [0, i)
@@ -122,12 +123,16 @@ struct WaveletTree {
   };
 
 
-  WaveletNode *root;
+
+
+  unique_ptr<WaveletNode> root;
+
   T lo, hi; // range of value
   template<typename Iterator>
   WaveletTree(Iterator first, Iterator last, T _lo, T _hi) : lo(_lo), hi(_hi) {
     vector<T> S(first, last);
-    root = new WaveletNode(S.begin(), S.end(), lo, hi);
+//    root = new WaveletNode(S.begin(), S.end(), lo, hi);
+    root = make_unique<WaveletNode> (S.begin(), S.end(), lo, hi);
   }
   template<typename Iterator>
   WaveletTree(Iterator first, Iterator last) :
@@ -180,19 +185,6 @@ struct WaveletTree {
   T quantile(size_t i) const {
     return root->quantile(i, 0, root->n);
   }
-
-  void dealloc_tree(WaveletNode *rt) {
-    if(rt == nullptr) {
-      return ;
-    }
-    dealloc_tree(rt->left);
-    dealloc_tree(rt->right);
-    delete rt;
-  }
-
-  ~WaveletTree() {
-    dealloc_tree(root);
-  }
 };
 
 
@@ -208,7 +200,9 @@ int main(){
     a.push_back(dis(rng) % val);
   }
   debug(a);
+
   WaveletTree<int> wt(a.begin(), a.end());
+
   vector<int> sorted_a(a.begin(), a.end());
   sort(sorted_a.begin(), sorted_a.end());
   // INIT
