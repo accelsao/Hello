@@ -27,33 +27,49 @@
 // ███████████████▓▓▓██▓▓╬╬╬╬╬╬▓███████████
 #include <bits/stdc++.h>
 using namespace std;
-#define DEBUG
-#define RE(a,b) memset(a,b,sizeof a)
-#define F first
-#define S second
-#define SZ(x) ((int)(x.size()))
-#define PB push_back
-#define ALL(X) (X).begin(), (X).end()
-using ll = long long;
-using ld = long double;
-using ull = unsigned long long;
-using pii = pair<int,int>;
-using C = complex<double>;
-const double PI = 3.14159265;
-const double eps = 1e-8;
-const int N = 1e6 +10;
+const int N = 1e6 + 10;
 const int M = 1e9 + 7;
-const int inf = 1e9+7;
-const ll INF = 1e18;
-ll pw(ll a, ll b){ll t=1;a%=M;for(;b;b>>=1){if(b&1){t=t*a%M;}a=a*a%M;}return t;}
-ll gcd(ll a, ll b){return b?gcd(b, a%b): a;}
+
+string to_string(string s) {
+  return '"' + s + '"';
+}
+string to_string(const char* s) {
+  return to_string((string) s);
+}
+string to_string(bool b) {
+  return (b ? "true" : "false");
+}
+template <typename A, typename B>
+string to_string(pair<A, B> p) {
+  return "(" + to_string(p.first) + ", " + to_string(p.second) + ")";
+}
+template <typename A>
+string to_string(A v) {
+  bool first = true;
+  string res = "{";
+  for (const auto &x : v) {
+    if (!first) {
+      res += ", ";
+    }
+    first = false;
+    res += to_string(x);
+  }
+  res += "}";
+  return res;
+}
+void debug_out() { cerr << endl; }
+template <typename Head, typename... Tail>
+void debug_out(Head H, Tail... T) {
+  cerr << " " << to_string(H);
+  debug_out(T...);
+}
+#define LOCAL
+#ifdef LOCAL
+#define debug(...) cerr << "[" << #__VA_ARGS__ << "]:", debug_out(__VA_ARGS__)
+#else
+#define debug(...) 42
+#endif
 
 int main(){
 	ios::sync_with_stdio(0),cin.tie(0);
 }
-
-/*
-#ifdef DEBUG
-	cout<<"I Love Co shu Nie [ https://coshunie.com/ ]"
-#endif
-*/
