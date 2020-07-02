@@ -1,9 +1,14 @@
+
 " Specify a directory for plugins
 " - For Neovim: stdpath('data') . '/plugged'
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.vim/plugged')
 
 " Make sure you use single quotes
+
+" =============================================================================
+" # PLUGINS
+" =============================================================================
 
 " Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
 Plug 'junegunn/vim-easy-align'
@@ -42,19 +47,38 @@ Plug 'valloric/youcompleteme'
 " Rust
 Plug 'rust-lang/rust.vim'
 
-
+" GUI enhancements
 Plug 'itchyny/lightline.vim'
+Plug 'machakann/vim-highlightedyank'
+Plug 'andymass/vim-matchup'
+
+Plug 'morhetz/gruvbox'
+
 
 " Initialize plugin system
 call plug#end()
 
 
+" set termguicolors
+
+
 
 " =============================================================================
-" # GUI settings
+" # VIM settings
 " =============================================================================
 set relativenumber " Relative line numbers
 set number " Also show current absolute line
 
+" =============================================================================
+" # Color
+" =============================================================================
+let g:gruvbox_termcolors=256
+let g:gruvbox_contrast_dark='hard'
+colorscheme gruvbox
+
+" =============================================================================
+" # Rust
+" =============================================================================
+let g:rustfmt_autosave = 1
 
 
